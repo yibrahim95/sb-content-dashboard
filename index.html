@@ -387,11 +387,69 @@ section { margin-bottom: 32px; }
 .note { font-size: 11px; color: var(--muted); font-style: italic; margin: 12px 4px 0; }
 .footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 12px; }
 
+/* Tablet */
 @media (max-width: 920px) {
   .hero-grid { grid-template-columns: repeat(2, 1fr); }
   .platform-grid-outer { grid-template-columns: repeat(2, 1fr); }
   .week-detail-inner { grid-template-columns: 1fr; }
   .q1-snapshot { grid-template-columns: repeat(2, 1fr); }
+  /* Tables get a horizontal scroll container so they never break layout */
+  .weekly-table, .data-table { display: block; overflow-x: auto; white-space: nowrap; }
+  .weekly-table thead, .data-table thead { white-space: nowrap; }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .container { padding: 14px 14px 60px; }
+
+  /* Header stacks */
+  header.top { flex-direction: column; align-items: flex-start; gap: 10px; padding: 14px 16px; }
+  .header-meta { text-align: left; }
+  .brand-text h1 { font-size: 16px; }
+
+  /* Hero tiles: 1 col, tighter padding */
+  .hero-grid { grid-template-columns: 1fr; gap: 10px; }
+  .hero-tile { padding: 14px 16px; }
+  .hero-tile .number { font-size: 28px; }
+
+  /* Platform cards: 1 col */
+  .platform-grid-outer { grid-template-columns: 1fr; }
+
+  /* Q1 stats: 2 col */
+  .q1-snapshot { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .q1-stat { padding: 12px; }
+  .q1-stat .val { font-size: 18px; }
+
+  /* Section headers tighter */
+  section { margin-bottom: 22px; }
+  .card { padding: 16px; }
+
+  /* Split bar: let it size with its cell */
+  .split-bar { width: 120px; }
+
+  /* Title cell readability: allow wrap on mobile in tables since horizontal-scroll view is used */
+  .weekly-table tbody td, .data-table tbody td { padding: 10px; }
+
+  /* Consistency chart: shrink height, smaller labels */
+  .consistency-chart { height: 100px; gap: 4px; }
+  .consistency-num { font-size: 12px; }
+  .consistency-lbl { font-size: 9px; }
+
+  /* AI analysis: reduce padding */
+  .ai-card { padding: 16px 18px; }
+  .ai-card .section-label { margin-top: 14px; }
+  .ai-card .recommendation { padding: 10px 12px; font-size: 13px; }
+
+  /* Weekly expand inner table */
+  .inner-table th, .inner-table td { padding: 6px 8px; font-size: 12px; }
+  .inner-table td.title-cell { max-width: 200px; white-space: normal; }
+
+  /* Top video title wraps even inside scroll */
+  .top-videos-table .title-cell { white-space: normal; max-width: 240px; }
+  .vid-title { font-size: 13px; }
+
+  /* Section title */
+  .section-title { font-size: 10px; }
 }
 </style>
 </head>
@@ -408,7 +466,7 @@ section { margin-bottom: 32px; }
   </div>
   <div class="header-meta">
     <div>Reporting window: <strong>2026-04-01 → 2026-06-30</strong></div>
-    <div>Last refreshed: <strong>24 Apr 2026 · 20:16</strong></div>
+    <div>Last refreshed: <strong>24 Apr 2026 · 22:33</strong></div>
   </div>
 </header>
 
