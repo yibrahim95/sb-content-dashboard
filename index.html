@@ -250,7 +250,7 @@ section { margin-bottom: 32px; }
 .data-table tbody tr:last-child td { border-bottom: none; }
 .data-table tbody tr:hover { background: var(--sb-navy-soft); }
 .data-table .rank { color: var(--muted); font-weight: 600; width: 40px; font-variant-numeric: tabular-nums; }
-.data-table .title-cell { max-width: 460px; line-height: 1.35; }
+.data-table .title-cell { max-width: 460px; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .data-table .title-cell a { color: var(--sb-navy); text-decoration: none; }
 .data-table .title-cell a:hover { color: var(--sb-orange); text-decoration: underline; }
 .data-table .num a { color: var(--sb-navy); text-decoration: none; font-weight: 500; }
@@ -466,7 +466,7 @@ section { margin-bottom: 32px; }
   </div>
   <div class="header-meta">
     <div>Reporting window: <strong>2026-04-01 → 2026-06-30</strong></div>
-    <div>Last refreshed: <strong>19 May 2026 · 19:08</strong></div>
+    <div>Last refreshed: <strong>01 Jun 2026 · 14:16</strong></div>
   </div>
 </header>
 
@@ -475,26 +475,26 @@ section { margin-bottom: 32px; }
   <div class="hero-grid">
     <div class="hero-tile">
       <div class="label">Total Views</div>
-      <div class="number">21,864</div>
-      <div class="delta delta-up">+226.8% vs Q1 same window</div>
+      <div class="number">41,457</div>
+      <div class="delta delta-up">+486.3% vs Q1 same window</div>
       <div class="sub">summed across all 4 platforms</div>
     </div>
     <div class="hero-tile">
       <div class="label">Videos Produced</div>
-      <div class="number">48</div>
-      <div class="delta delta-up">+300.0% vs Q1 same window</div>
-      <div class="sub"><strong>auto-detected · 48</strong></div>
-      <div class="sub">6.0/week avg · 130 platform postings</div>
+      <div class="number">96</div>
+      <div class="delta delta-up">+700.0% vs Q1 same window</div>
+      <div class="sub"><strong>auto-detected · 96</strong></div>
+      <div class="sub">9.6/week avg · 208 platform postings</div>
     </div>
     <div class="hero-tile">
       <div class="label">Total Engagement</div>
-      <div class="number">513</div>
-      <div class="delta delta-up">+185.0% vs Q1 same window</div>
+      <div class="number">606</div>
+      <div class="delta delta-up">+306.7% vs Q1 same window</div>
       <div class="sub">likes + comments + shares</div>
     </div>
     <div class="hero-tile">
       <div class="label">Subscribers Gained</div>
-      <div class="number">6</div>
+      <div class="number">10</div>
       <div class="sub">YouTube (both channels)</div>
     </div>
   </div>
@@ -505,20 +505,58 @@ section { margin-bottom: 32px; }
   <div class="section-title">AI Analysis</div>
   <div class="card ai-card">
     <h2>Performance summary<span class="ai-badge">Claude</span></h2>
-    <div class="section-label">OVERALL</div><p>Q2 shows strong volume growth — 37 short-form posts across the Big 3 (+106% vs Q1's 18), driving 10,565 views (+80%). YouTube Shorts is carrying the channel: 74% of Big 3 views come from just 27% of the posts, and avg views/short is up 25% YoY (782 vs 624). The concerns: Shorts CTR collapsed from 3.84% to 1.54%, TikTok avg plays halved (184 vs 325), and quarter subscribers are trailing (7 vs Q1's 26 total). Publishing cadence is the clear win; cut-through per post is the clear issue.</p>
+    <div class="section-label">OVERALL</div><p>Q2 quarter-to-date is 41,457 views across 222 platform postings, with 11 YouTube subscribers gained. YouTube Shorts carries the channel: 22,218 views (54% of the total) off 47 posts. The pattern is clear. Volume and retention are healthy, but discovery is the bottleneck. Average view duration is up this quarter while click-through and new-viewer reach have softened, so the front door (titles and thumbnails) is now the lever, not the watch experience.</p>
 <br>
 <div class="section-label">PER PLATFORM</div>
-<p><span class="platform-label">YouTube Shorts:</span> The workhorse — 782 avg views, 8 of top 10 posts, beating Q1 on reach. But CTR fell 60% — thumbnail and first-3-seconds hook work is the biggest lever here.</p>
-<p><span class="platform-label">TikTok:</span> More volume but less per-post reach (avg 184 vs 325). Engagement rate actually ROSE (5.28% vs 4.2%) — the existing audience is more active, but the algorithm isn't pushing reach to new viewers.</p>
-<p><span class="platform-label">Instagram:</span> Highest engagement rate (27.8%) but tiny absolute reach (25 avg views/reel). This is a distribution problem, not a content problem.</p>
-<p><span class="platform-label">Facebook:</span> Avg views +488% but from near-zero (5.6 → 33). Supporting channel only; the jump is mostly a volume artefact.</p>
+<p><span class="platform-label">YouTube Shorts:</span> The workhorse at 473 avg views per post. Retention is strong; the addressable drop is CTR. Title shape is the proven fix (see EXP7).</p>
+<p><span class="platform-label">TikTok:</span> 210 avg views over 51 posts. Steady reach, the most consistent of the social channels.</p>
+<p><span class="platform-label">Instagram:</span> 125 avg views but the highest engagement rate. A distribution ceiling, not a content problem. Trial reels (EXP2, EXP6) are the chosen workaround.</p>
+<p><span class="platform-label">Facebook:</span> 28 avg views. Supporting channel only; post for hygiene, not reach.</p>
 <br>
-<div class="section-label">CROSS-PLATFORM VARIANCE</div><p>The same video regularly performs 5-40× better on TikTok than Instagram. "Almost half of all consumers use TikTok as a search engine" got 196 plays on TikTok vs 5 views on Instagram — identical caption, same day. Likely causes: Instagram's algorithm is gating distribution to small business accounts (text-heavy Reels are deprioritized), while TikTok's For You page still rewards small accounts with business content. Meta-content (videos ABOUT Instagram, Facebook, TikTok) consistently outperforms platform-native topics — audiences click curiosity, not "how-to".</p>
+<div class="section-label">CROSS-PLATFORM VARIANCE</div><p>The same script regularly performs many times better on TikTok than Instagram. Review and decision-page scripts skew hard to TikTok; Mosseri and Google-strategy angles skew to Instagram. Pick the platform to the script.</p>
+<br>
+<div class="section-label">EXPERIMENTS</div><p>Eight Q2 experiments are now logged. Confirmed wins: EXP2 (the Ranked List hook beat four others by 19% on cold IG audiences) and EXP5 (a re-edit of an identical script drove 73% more views on 2.6 times the retention, proving the edit is a separable lever). EXP7 validated that stakes-shaped titles beat abstract ones and is now enforced in the CE4 title gate.</p>
 <br>
 <div class="section-label">RECOMMENDATIONS</div>
-<div class="recommendation">1. A/B test YouTube thumbnails and first-3-second hooks — CTR regression is the single biggest addressable drop (3.84% → 1.54%).</div>
-<div class="recommendation">2. Reallocate Instagram effort — post for hygiene but don't produce IG-specific content. Views/production hour is 10-40× higher on TikTok and YouTube.</div>
-<div class="recommendation">3. Lean into meta-content — Facebook strategy (924 avg views), Instagram strategy (329 avg), Reviews (154 avg) all outperform. Avoid TikTok-strategy topics (24 avg) — even TikTok's audience doesn't want meta-TikTok content.</div>
+<div class="recommendation">1. Fix YouTube titles first. CTR is the single biggest addressable drop. Apply the EXP7 stakes-title shape to every Short.</div>
+<div class="recommendation">2. Lean on the winning hook pattern. Weight EXP2's Ranked List plus visceral dichotomy higher in hook generation by default.</div>
+<div class="recommendation">3. Reallocate Instagram effort. Post for hygiene, route real testing through trial reels, and do not produce IG-specific content while reach is gated.</div>
+<div class="recommendation">4. Ship EXP3 (head-pop) this week as platform experiment number two, matched against a standard-hook control.</div>
+<br>
+  </div>
+</section>
+
+<!-- Q2 Experiments -->
+<style>
+.exp-table { width:100%; border-collapse:collapse; font-size:14px; }
+.exp-table th { text-align:left; padding:10px 12px; color:var(--muted); font-weight:600; font-size:12px; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid var(--border-strong); }
+.exp-table td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+.exp-table tr:last-child td { border-bottom:none; }
+.exp-id { font-weight:700; color:var(--sb-navy); white-space:nowrap; }
+.exp-name { font-weight:600; color:var(--ink); }
+.exp-meta { color:var(--ink-2); font-size:13px; }
+.epill { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; white-space:nowrap; }
+.epill-done { background:rgba(34,160,90,0.12); color:#1c8a4e; }
+.epill-live { background:var(--sb-orange-soft); color:var(--sb-orange); }
+.epill-data { background:var(--sb-navy-soft); color:var(--ink-2); }
+.epill-build { background:rgba(120,90,200,0.10); color:#6a4cc0; }
+.exp-note { margin-top:14px; color:var(--muted); font-size:13px; }
+</style>
+<section>
+  <div class="section-title">Q2 Experiments · hook / format / platform split tests</div>
+  <div class="card">
+    <table class="exp-table">
+      <thead><tr><th>ID</th><th>Experiment</th><th>Brand / platform</th><th>Status</th><th>Result / winner</th></tr></thead>
+      <tbody><tr><td class="exp-id">EXP1</td><td><div class="exp-name">Outlier-creator replication</div><div class="exp-meta">7 SB videos modeled on 1M–5.6M outliers</div></td><td class="exp-meta">SB · all</td><td><span class="epill epill-data">Needs data</span></td><td class="exp-meta">Needs view backfill</td></tr>
+<tr><td class="exp-id">EXP2</td><td><div class="exp-name">Julia Pintar 10-hook bracket</div><div class="exp-meta">5 hooks · 1 body · IG trial-reel race</div></td><td class="exp-meta">SB · IG trial reels</td><td><span class="epill epill-done">Result in</span></td><td class="exp-meta">Variant 5 (Ranked List) won · 95 views · +19%</td></tr>
+<tr><td class="exp-id">EXP3</td><td><div class="exp-name">Editing Style C — head-pop hook</div><div class="exp-meta">Seedance talent-breaks-frame open</div></td><td class="exp-meta">SB + AIOSEO</td><td><span class="epill epill-build">Built</span></td><td class="exp-meta">Built · shipping week of Jun 1</td></tr>
+<tr><td class="exp-id">EXP4</td><td><div class="exp-name">Stat-led hooks</div><div class="exp-meta">Open on a hard % stat vs claim/question</div></td><td class="exp-meta">SB + WPChat · all</td><td><span class="epill epill-live">In flight</span></td><td class="exp-meta">In flight — 72h data pending</td></tr>
+<tr><td class="exp-id">EXP5</td><td><div class="exp-name">Same-script / different-edit</div><div class="exp-meta">Identical script, two edits, day apart</div></td><td class="exp-meta">SB · YouTube</td><td><span class="epill epill-done">Result in</span></td><td class="exp-meta">Re-edit +73% views (130 vs 75) on 2.6× retention</td></tr>
+<tr><td class="exp-id">EXP6</td><td><div class="exp-name">IG trial-reels as growth lever</div><div class="exp-meta">Test on non-followers → promote winner</div></td><td class="exp-meta">SB + WPChat · IG</td><td><span class="epill epill-done">Result in</span></td><td class="exp-meta">Rock 3 platform experiment #1 of 3</td></tr>
+<tr><td class="exp-id">EXP7</td><td><div class="exp-name">Title-shape CTR test</div><div class="exp-meta">“Your/You + platform + consequence” vs abstract</div></td><td class="exp-meta">SB + WPChat · YouTube</td><td><span class="epill epill-done">Result in</span></td><td class="exp-meta">Stakes-title shape wins · live in CE4 gate</td></tr>
+<tr><td class="exp-id">EXP8</td><td><div class="exp-name">Editing Style B — split-screen</div><div class="exp-meta">@nateherkai top/bottom split vs full-frame</div></td><td class="exp-meta">SB · all</td><td><span class="epill epill-data">Needs data</span></td><td class="exp-meta">Published — metrics pending</td></tr></tbody>
+    </table>
+    <div class="exp-note">Rock 3 (3 platform-specific experiments): EXP6 = #1 · EXP3 head-pop is candidate #2. AI-adoption split-test goal: EXP7 (closest to the original framing spec) plus EXP1/2/4/5/8. Full detail in content-pipeline/EXPERIMENT-LOG.md.</div>
   </div>
 </section>
 
@@ -541,7 +579,7 @@ section { margin-bottom: 32px; }
     <tbody>
       
 <tr class="week-row" data-week="0" onclick="toggleWeek(0, event)">
-  <td><span class="expand-arrow">▸</span> <strong>May 18 – May 24</strong></td>
+  <td><span class="expand-arrow">▸</span> <strong>Jun 1 – Jun 7</strong></td>
   <td class="num"><strong>0</strong><div class="sub-lbl">videos</div></td>
   <td class="num"><strong>0</strong></td>
   <td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td><td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td><td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td>
@@ -574,14 +612,350 @@ section { margin-bottom: 32px; }
 
 
 <tr class="week-row" data-week="1" onclick="toggleWeek(1, event)">
-  <td><span class="expand-arrow">▸</span> <strong>May 11 – May 17</strong></td>
-  <td class="num"><strong>11</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>4,049</strong></td>
-  <td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td><td class="plat-cell"><div class="plat-views">2,258</div><div class="plat-posts">11 posts</div></td><td class="plat-cell"><div class="plat-views">1,483</div><div class="plat-posts">11 posts</div></td>
-  <td class="plat-cell muted"><div class="plat-views">308</div><div class="plat-posts">11 posts</div></td>
-  <td class="num">80</td>
+  <td><span class="expand-arrow">▸</span> <strong>May 25 – May 31</strong></td>
+  <td class="num"><strong>10</strong><div class="sub-lbl">videos</div></td>
+  <td class="num"><strong>3,024</strong></td>
+  <td class="plat-cell"><div class="plat-views">1,169</div><div class="plat-posts">4 posts</div></td><td class="plat-cell"><div class="plat-views">1,330</div><div class="plat-posts">6 posts</div></td><td class="plat-cell"><div class="plat-views">319</div><div class="plat-posts">6 posts</div></td>
+  <td class="plat-cell muted"><div class="plat-views">206</div><div class="plat-posts">6 posts</div></td>
+  <td class="num">39</td>
 </tr>
 <tr class="week-detail" id="week-detail-1">
+  <td colspan="8">
+    <div class="week-detail-inner">
+      <div class="week-top-post">
+        <div class="label">BEST VIDEO THIS WEEK</div>
+        <a class="top-title" href="https://www.tiktok.com/@smash.balloon/video/7644571146314059028" target="_blank" rel="noopener">The local businesses with the best Instagram presence almost always have the most dated-looking websites. 
+
+Spending a few hours embedding your live Instagram feed on your homepage is one of those fix</a>
+        <div class="top-meta"><strong>531</strong> total views · posted on 3 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7644571146314059028" target="_blank" rel="noopener"><span class="plat-pill-label">TikTok</span><span class="plat-pill-views">415</span></a><a class="plat-pill plat-pill-instagram" href="https://www.instagram.com/p/DYwXXwnTIkg/" target="_blank" rel="noopener"><span class="plat-pill-label">Instagram</span><span class="plat-pill-views">95</span></a><a class="plat-pill plat-pill-facebook" href="https://www.facebook.com/reel/1631336154602510/" target="_blank" rel="noopener"><span class="plat-pill-label">Facebook</span><span class="plat-pill-views">21</span></a></div>
+      </div>
+      <div class="posts-list">
+        <div class="label">ALL VIDEOS THIS WEEK · 10 unique · ranked by total views</div>
+        <table class="inner-table">
+          <thead><tr><th>Title</th><th>Topic</th><th class="num">YT</th><th class="num">TikTok</th><th class="num">IG</th><th class="num">FB</th><th class="num">Total</th></tr></thead>
+          <tbody>
+
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7644571146314059028" target="_blank" rel="noopener">The local businesses with the best Instagram presence almost always have the most dated-looking websites. 
+
+Spending a few hours embedding your live Instagram feed on your homepage is one of those fix</a></td>
+              <td><span class="topic-tag">Instagram strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7644571146314059028" target="_blank" rel="noopener">415</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYwXXwnTIkg/" target="_blank" rel="noopener">95</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1631336154602510/" target="_blank" rel="noopener">21</a></td>
+              <td class="num total-col"><strong>531</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=U0amnRuCub4" target="_blank" rel="noopener">88% of contact forms get abandoned. Here's what to use instead!
+
+smallbusinesstips #wordpresstips #whatsappbusiness #localbusiness #wpchat #conversionrate #contactform #wordpressplugin #ecommerce #sma</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=U0amnRuCub4" target="_blank" rel="noopener">420</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7645322726973934869" target="_blank" rel="noopener">93</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>513</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7645188619380231445" target="_blank" rel="noopener">Restaurants and hotels lose bookings on the page where the decision actually gets made because they only show one review source, usually Google, when their best signal lives on TripAdvisor or Yelp. 
+
+</a></td>
+              <td><span class="topic-tag">Reviews</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7645188619380231445" target="_blank" rel="noopener">308</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DY6WDNTjlCw/" target="_blank" rel="noopener">25</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1641472830488378/" target="_blank" rel="noopener">47</a></td>
+              <td class="num total-col"><strong>380</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7643808103204457748" target="_blank" rel="noopener">The bio link is a black hole and nobody talks about it. 
+
+People watch your Reel, hit save, then screenshot. They don't tap out.
+
+Instagram trains them to stay in the app because every outbound click </a></td>
+              <td><span class="topic-tag">Instagram strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7643808103204457748" target="_blank" rel="noopener">218</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYww_ZSjlT6/" target="_blank" rel="noopener">112</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/2442359706239132/" target="_blank" rel="noopener">29</a></td>
+              <td class="num total-col"><strong>359</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=cHg-gEv7sbI" target="_blank" rel="noopener">84% of Diners Check TripAdvisor. Your Site Doesn't Show Any.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=cHg-gEv7sbI" target="_blank" rel="noopener">356</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>356</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7645671631183990037" target="_blank" rel="noopener">Phone calls require a script in your head, the right tone of voice, no background noise, and the energy to deal with a stranger live. 
+
+Customers under 35 grew up texting and calling feels like orderi</a></td>
+              <td><span class="topic-tag">Content strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7645671631183990037" target="_blank" rel="noopener">160</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DY-G06LDJiQ/" target="_blank" rel="noopener">32</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/27253041407667474/" target="_blank" rel="noopener">52</a></td>
+              <td class="num total-col"><strong>244</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=6zJWK6DYU9o" target="_blank" rel="noopener">95% of People Who Watch Your Reels Never Tap Your Bio</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=6zJWK6DYU9o" target="_blank" rel="noopener">221</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>221</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7645670308363390228" target="_blank" rel="noopener">Most buyers check reviews before they buy, but very few actually read them where you posted them.
+
+They glance at the star count on Google, click through to your website to confirm you're a real busin</a></td>
+              <td><span class="topic-tag">Reviews</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7645670308363390228" target="_blank" rel="noopener">136</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DY9r97TD8eC/" target="_blank" rel="noopener">22</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1638958637163893/" target="_blank" rel="noopener">26</a></td>
+              <td class="num total-col"><strong>184</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=vmFvFXua1Dk" target="_blank" rel="noopener">Your Instagram Is Outperforming Your Website</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=vmFvFXua1Dk" target="_blank" rel="noopener">172</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>172</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.instagram.com/p/DY7RcMcCVWx/" target="_blank" rel="noopener">Most people who start your contact form never finish it. They get to field two and back out. 
+
+The form was designed for desktop and patience, neither of which a customer on their phone with one quest</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.instagram.com/p/DY7RcMcCVWx/" target="_blank" rel="noopener">33</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1457612346120339/" target="_blank" rel="noopener">31</a></td>
+              <td class="num total-col"><strong>64</strong></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </td>
+</tr>
+
+
+<tr class="week-row" data-week="2" onclick="toggleWeek(2, event)">
+  <td><span class="expand-arrow">▸</span> <strong>May 18 – May 24</strong></td>
+  <td class="num"><strong>13</strong><div class="sub-lbl">videos</div></td>
+  <td class="num"><strong>5,704</strong></td>
+  <td class="plat-cell"><div class="plat-views">2,809</div><div class="plat-posts">7 posts</div></td><td class="plat-cell"><div class="plat-views">1,810</div><div class="plat-posts">6 posts</div></td><td class="plat-cell"><div class="plat-views">860</div><div class="plat-posts">7 posts</div></td>
+  <td class="plat-cell muted"><div class="plat-views">225</div><div class="plat-posts">7 posts</div></td>
+  <td class="num">92</td>
+</tr>
+<tr class="week-detail" id="week-detail-2">
+  <td colspan="8">
+    <div class="week-detail-inner">
+      <div class="week-top-post">
+        <div class="label">BEST VIDEO THIS WEEK</div>
+        <a class="top-title" href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener">Why Your Local Business Loses Sales After 8pm</a>
+        <div class="top-meta"><strong>1,454</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,454</span></a></div>
+      </div>
+      <div class="posts-list">
+        <div class="label">ALL VIDEOS THIS WEEK · 13 unique · ranked by total views</div>
+        <table class="inner-table">
+          <thead><tr><th>Title</th><th>Topic</th><th class="num">YT</th><th class="num">TikTok</th><th class="num">IG</th><th class="num">FB</th><th class="num">Total</th></tr></thead>
+          <tbody>
+
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener">Why Your Local Business Loses Sales After 8pm</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener">1,454</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>1,454</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=TNGsFUzeVNs" target="_blank" rel="noopener">Why Your Website Is Wasting Every Reel You Posted</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=TNGsFUzeVNs" target="_blank" rel="noopener">880</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>880</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7641937594028297492" target="_blank" rel="noopener">The right review on the right page closes the sale. 
+
+A cupcake review next to your cupcakes does the work. A wedding-tier review on a checkout page doesn't. 
+
+Reviews Feed Pro now lets you build Coll</a></td>
+              <td><span class="topic-tag">Reviews</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=4klNuz_PjW0" target="_blank" rel="noopener">19</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7641937594028297492" target="_blank" rel="noopener">403</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYlpSp7E0b8/" target="_blank" rel="noopener">70</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/878997805252137/" target="_blank" rel="noopener">6</a></td>
+              <td class="num total-col"><strong>498</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7643396832961318165" target="_blank" rel="noopener">Comments outperform likes as social proof by a wide margin and nobody's leveraging this. 
+
+The like is anonymous. The comment has a name, a face, and someone's actual words about your business. 
+
+That</a></td>
+              <td><span class="topic-tag">Growth/Followers</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7643396832961318165" target="_blank" rel="noopener">279</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYt6TpnEswd/" target="_blank" rel="noopener">134</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/2789048048137418/" target="_blank" rel="noopener">45</a></td>
+              <td class="num total-col"><strong>458</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7641937242272861461" target="_blank" rel="noopener">Adding a WhatsApp chat button to your WordPress site takes 5 minutes, and most local businesses still don't have one. 
+
+The customer sees a small green button in the corner, taps once, and WhatsApp op</a></td>
+              <td><span class="topic-tag">Messaging/WhatsApp</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7641937242272861461" target="_blank" rel="noopener">302</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYj385yD20T/" target="_blank" rel="noopener">133</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1013515997679039/" target="_blank" rel="noopener">22</a></td>
+              <td class="num total-col"><strong>457</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7642490661186456853" target="_blank" rel="noopener">You posted 30 reels this year and your website has none of them. 
+
+The reels took hours to make. Strangers saw them for two seconds and scrolled. 
+
+The customers who actually visit your site never see</a></td>
+              <td><span class="topic-tag">Instagram strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7642490661186456853" target="_blank" rel="noopener">293</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYoOG9rjS0h/" target="_blank" rel="noopener">115</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/998940509735906/" target="_blank" rel="noopener">45</a></td>
+              <td class="num total-col"><strong>453</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7642496079069531413" target="_blank" rel="noopener">Someone's on your site at 9:30pm wanting to ask one question. 
+
+Your phone goes to voicemail. Your contact form sends a 24-hour autoresponder. 
+
+By morning they've booked the competitor. Almost half o</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7642496079069531413" target="_blank" rel="noopener">285</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYnqO44lN0t/" target="_blank" rel="noopener">110</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/990850543347464/" target="_blank" rel="noopener">32</a></td>
+              <td class="num total-col"><strong>427</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7642493936048688405" target="_blank" rel="noopener">You can hit 100,000 views and walk into your shop the next day to the same five people. 
+
+The algorithm sent your reel to people 1000 miles away. Not your customers. 
+
+Local businesses don't need vira</a></td>
+              <td><span class="topic-tag">Instagram strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7642493936048688405" target="_blank" rel="noopener">248</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYqy4qjEXpu/" target="_blank" rel="noopener">139</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/4463859347225625/" target="_blank" rel="noopener">38</a></td>
+              <td class="num total-col"><strong>425</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.instagram.com/p/DYjY05RFPiH/" target="_blank" rel="noopener">Three habits separate the local businesses still winning on Facebook in 2026 from the ones bleeding reach. 
+
+I went through 20 salons, plumbers, and restaurants this week and the winners all had the s</a></td>
+              <td><span class="topic-tag">Facebook strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.instagram.com/p/DYjY05RFPiH/" target="_blank" rel="noopener">159</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1004654108780469/" target="_blank" rel="noopener">37</a></td>
+              <td class="num total-col"><strong>196</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=8D_zp84TAFY" target="_blank" rel="noopener">78% of Buyers Trust Comments More Than Likes</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=8D_zp84TAFY" target="_blank" rel="noopener">184</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>184</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=grL_bbThAhw" target="_blank" rel="noopener">Why Going Viral Is Killing Your Local Business</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=grL_bbThAhw" target="_blank" rel="noopener">154</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>154</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=dhZHx6f9jiE" target="_blank" rel="noopener">3 Habits Winning on Local Facebook in 2026</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=dhZHx6f9jiE" target="_blank" rel="noopener">80</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>80</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=aVtpwFEbULM" target="_blank" rel="noopener">How to Add a WhatsApp Chat Button to WordPress in 5 Minutes</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=aVtpwFEbULM" target="_blank" rel="noopener">38</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>38</strong></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </td>
+</tr>
+
+
+<tr class="week-row" data-week="3" onclick="toggleWeek(3, event)">
+  <td><span class="expand-arrow">▸</span> <strong>May 11 – May 17</strong></td>
+  <td class="num"><strong>22</strong><div class="sub-lbl">videos</div></td>
+  <td class="num"><strong>5,452</strong></td>
+  <td class="plat-cell"><div class="plat-views">1,304</div><div class="plat-posts">11 posts</div></td><td class="plat-cell"><div class="plat-views">2,288</div><div class="plat-posts">11 posts</div></td><td class="plat-cell"><div class="plat-views">1,547</div><div class="plat-posts">11 posts</div></td>
+  <td class="plat-cell muted"><div class="plat-views">313</div><div class="plat-posts">11 posts</div></td>
+  <td class="num">82</td>
+</tr>
+<tr class="week-detail" id="week-detail-3">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
@@ -589,11 +963,11 @@ section { margin-bottom: 32px; }
         <a class="top-title" href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener">A local business I looked at had 200 reviews across Google, Facebook, and Yelp, and zero on their website.
 
 Customers don't open three tabs. They check one source and either trust you in 10 seconds or</a>
-        <div class="top-meta"><strong>749</strong> total views · posted on 3 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener"><span class="plat-pill-label">TikTok</span><span class="plat-pill-views">557</span></a><a class="plat-pill plat-pill-instagram" href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener"><span class="plat-pill-label">Instagram</span><span class="plat-pill-views">173</span></a><a class="plat-pill plat-pill-facebook" href="https://www.facebook.com/reel/903460828870531/" target="_blank" rel="noopener"><span class="plat-pill-label">Facebook</span><span class="plat-pill-views">19</span></a></div>
+        <div class="top-meta"><strong>755</strong> total views · posted on 3 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener"><span class="plat-pill-label">TikTok</span><span class="plat-pill-views">557</span></a><a class="plat-pill plat-pill-instagram" href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener"><span class="plat-pill-label">Instagram</span><span class="plat-pill-views">179</span></a><a class="plat-pill plat-pill-facebook" href="https://www.facebook.com/reel/903460828870531/" target="_blank" rel="noopener"><span class="plat-pill-label">Facebook</span><span class="plat-pill-views">19</span></a></div>
       </div>
       <div class="posts-list">
-        <div class="label">ALL VIDEOS THIS WEEK · 11 unique · ranked by total views</div>
+        <div class="label">ALL VIDEOS THIS WEEK · 22 unique · ranked by total views</div>
         <table class="inner-table">
           <thead><tr><th>Title</th><th>Topic</th><th class="num">YT</th><th class="num">TikTok</th><th class="num">IG</th><th class="num">FB</th><th class="num">Total</th></tr></thead>
           <tbody>
@@ -606,9 +980,9 @@ Customers don't open three tabs. They check one source and either trust you in 1
               <td><span class="topic-tag">Reviews</span></td>
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener">557</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener">173</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener">179</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/903460828870531/" target="_blank" rel="noopener">19</a></td>
-              <td class="num total-col"><strong>749</strong></td>
+              <td class="num total-col"><strong>755</strong></td>
             </tr>
 
             <tr>
@@ -617,10 +991,10 @@ Customers don't open three tabs. They check one source and either trust you in 1
 A contact form at 9pm is the same as a locked door. Customers do not wait. They close the tab and find someone who</a></td>
               <td><span class="topic-tag">Other</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640838176466062613" target="_blank" rel="noopener">534</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYcKBOqEbZJ/" target="_blank" rel="noopener">126</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640838176466062613" target="_blank" rel="noopener">538</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYcKBOqEbZJ/" target="_blank" rel="noopener">138</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1300940338843031/" target="_blank" rel="noopener">24</a></td>
-              <td class="num total-col"><strong>684</strong></td>
+              <td class="num total-col"><strong>700</strong></td>
             </tr>
 
             <tr>
@@ -629,24 +1003,10 @@ A contact form at 9pm is the same as a locked door. Customers do not wait. They 
 In the twelve seconds someone spends sizing you up,</a></td>
               <td><span class="topic-tag">Reviews</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7638429766810357013" target="_blank" rel="noopener">233</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7638429766810357013" target="_blank" rel="noopener">235</a></td>
               <td class="num"><a href="https://www.instagram.com/p/DYLchrzCYJM/" target="_blank" rel="noopener">69</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1006446648706273/" target="_blank" rel="noopener">43</a></td>
-              <td class="num total-col"><strong>345</strong></td>
-            </tr>
-
-            <tr>
-              <td class="title-cell"><a href="https://www.instagram.com/p/DYPSrZNiXWh/" target="_blank" rel="noopener">Most Instagram bios fail in the first 3 seconds because they describe what you do instead of who you help.
-
-"Helping small businesses grow" tells me what you sell. Not whether I belong here.
-
-The bios</a></td>
-              <td><span class="topic-tag">Instagram strategy</span></td>
-              <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7638984099260058901" target="_blank" rel="noopener">123</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYPSrZNiXWh/" target="_blank" rel="noopener">148</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/2378988845860433/" target="_blank" rel="noopener">45</a></td>
-              <td class="num total-col"><strong>316</strong></td>
+              <td class="num total-col"><strong>347</strong></td>
             </tr>
 
             <tr>
@@ -657,10 +1017,24 @@ By the third field, the tab is closed.
 WPChat flips it. Yo</a></td>
               <td><span class="topic-tag">Email</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640468277365574932" target="_blank" rel="noopener">104</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYZ82CiEQxz/" target="_blank" rel="noopener">169</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/953892887254703/" target="_blank" rel="noopener">38</a></td>
-              <td class="num total-col"><strong>311</strong></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640468277365574932" target="_blank" rel="noopener">105</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYZ82CiEQxz/" target="_blank" rel="noopener">175</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/953892887254703/" target="_blank" rel="noopener">39</a></td>
+              <td class="num total-col"><strong>319</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.instagram.com/p/DYPSrZNiXWh/" target="_blank" rel="noopener">Most Instagram bios fail in the first 3 seconds because they describe what you do instead of who you help.
+
+"Helping small businesses grow" tells me what you sell. Not whether I belong here.
+
+The bios</a></td>
+              <td><span class="topic-tag">Instagram strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7638984099260058901" target="_blank" rel="noopener">124</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYPSrZNiXWh/" target="_blank" rel="noopener">148</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/2378988845860433/" target="_blank" rel="noopener">45</a></td>
+              <td class="num total-col"><strong>317</strong></td>
             </tr>
 
             <tr>
@@ -669,22 +1043,10 @@ WPChat flips it. Yo</a></td>
 Someone lands on your site with a real question, looks for a way to ask, and sees your pho</a></td>
               <td><span class="topic-tag">Other</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640084545756286228" target="_blank" rel="noopener">115</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYXKY72DMxY/" target="_blank" rel="noopener">162</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/1780798753298759/" target="_blank" rel="noopener">29</a></td>
-              <td class="num total-col"><strong>306</strong></td>
-            </tr>
-
-            <tr>
-              <td class="title-cell"><a href="https://www.instagram.com/p/DYZtRu4lEY7/" target="_blank" rel="noopener">Looked at 10 local business WordPress sites this week. Not one had embedded their own Facebook page.
-
-Every one of those businesses posts to Facebook 3 to 4 times a week, with photos, events, and real</a></td>
-              <td><span class="topic-tag">Facebook strategy</span></td>
-              <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640484812888739092" target="_blank" rel="noopener">110</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYZtRu4lEY7/" target="_blank" rel="noopener">142</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/1607699870315891/" target="_blank" rel="noopener">33</a></td>
-              <td class="num total-col"><strong>285</strong></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640084545756286228" target="_blank" rel="noopener">117</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYXKY72DMxY/" target="_blank" rel="noopener">169</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1780798753298759/" target="_blank" rel="noopener">30</a></td>
+              <td class="num total-col"><strong>316</strong></td>
             </tr>
 
             <tr>
@@ -693,10 +1055,46 @@ Every one of those businesses posts to Facebook 3 to 4 times a week, with photos
 A follower is someone who liked a post and tapped a button. A DM is someone who decided you might solve a real problem and r</a></td>
               <td><span class="topic-tag">Growth/Followers</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640084101365566741" target="_blank" rel="noopener">126</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYXYHDMAcZb/" target="_blank" rel="noopener">136</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640084101365566741" target="_blank" rel="noopener">141</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYXYHDMAcZb/" target="_blank" rel="noopener">146</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1505804151191703/" target="_blank" rel="noopener">18</a></td>
-              <td class="num total-col"><strong>280</strong></td>
+              <td class="num total-col"><strong>305</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.instagram.com/p/DYZtRu4lEY7/" target="_blank" rel="noopener">Looked at 10 local business WordPress sites this week. Not one had embedded their own Facebook page.
+
+Every one of those businesses posts to Facebook 3 to 4 times a week, with photos, events, and real</a></td>
+              <td><span class="topic-tag">Facebook strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640484812888739092" target="_blank" rel="noopener">112</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYZtRu4lEY7/" target="_blank" rel="noopener">149</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1607699870315891/" target="_blank" rel="noopener">34</a></td>
+              <td class="num total-col"><strong>295</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=mOqBWBtEbpc" target="_blank" rel="noopener">30 Small Business Instagram Bios. All 30 Failed the Same Test.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=mOqBWBtEbpc" target="_blank" rel="noopener">274</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>274</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">Mosseri's been telling us this for a year and most accounts still don't believe it.
+
+Shares. DMs, send-to-friends, story re-shares. Outweigh likes by a wide margin in the 2026 algorithm.
+
+A like takes</a></td>
+              <td><span class="topic-tag">Content strategy</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7639700657829661972" target="_blank" rel="noopener">110</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">156</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1002101812159185/" target="_blank" rel="noopener">3</a></td>
+              <td class="num total-col"><strong>269</strong></td>
             </tr>
 
             <tr>
@@ -708,23 +1106,9 @@ Because AI made polis</a></td>
               <td><span class="topic-tag">AI</span></td>
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7639389199879179541" target="_blank" rel="noopener">136</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYSGvLcj8Jw/" target="_blank" rel="noopener">77</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYSGvLcj8Jw/" target="_blank" rel="noopener">78</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1010228854763351/" target="_blank" rel="noopener">55</a></td>
-              <td class="num total-col"><strong>268</strong></td>
-            </tr>
-
-            <tr>
-              <td class="title-cell"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">Mosseri's been telling us this for a year and most accounts still don't believe it.
-
-Shares. DMs, send-to-friends, story re-shares. Outweigh likes by a wide margin in the 2026 algorithm.
-
-A like takes</a></td>
-              <td><span class="topic-tag">Content strategy</span></td>
-              <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7639700657829661972" target="_blank" rel="noopener">108</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">151</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/1002101812159185/" target="_blank" rel="noopener">2</a></td>
-              <td class="num total-col"><strong>261</strong></td>
+              <td class="num total-col"><strong>269</strong></td>
             </tr>
 
             <tr>
@@ -735,10 +1119,110 @@ Their customers under 30 already moved on.
 They search TikTok and Instagram first, watch a few Reels, then maybe cl</a></td>
               <td><span class="topic-tag">TikTok strategy</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640718860747820309" target="_blank" rel="noopener">112</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYbVAjLDqA5/" target="_blank" rel="noopener">130</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/985033297340671/" target="_blank" rel="noopener">2</a></td>
-              <td class="num total-col"><strong>244</strong></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640718860747820309" target="_blank" rel="noopener">113</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYbVAjLDqA5/" target="_blank" rel="noopener">140</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/985033297340671/" target="_blank" rel="noopener">3</a></td>
+              <td class="num total-col"><strong>256</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=hY_rQvhRObc" target="_blank" rel="noopener">Your website is built for Google traffic. Your customers are on TikTok.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=hY_rQvhRObc" target="_blank" rel="noopener">172</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>172</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=gzWi0LCn4tE" target="_blank" rel="noopener">Your Website Leads With "Call Us", and Most Customers Won't</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=gzWi0LCn4tE" target="_blank" rel="noopener">171</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>171</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=MbCF9VnFqZk" target="_blank" rel="noopener">Your Best Reviews Are Hidden From Customers</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=MbCF9VnFqZk" target="_blank" rel="noopener">162</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>162</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=slf1x4qbGwg" target="_blank" rel="noopener">Adam Mosseri Just Killed the Instagram Aesthetic</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=slf1x4qbGwg" target="_blank" rel="noopener">129</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>129</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=bY-9jhqYpA4" target="_blank" rel="noopener">I Looked at 10 Local Business Sites. None Embedded Their Facebook Page.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=bY-9jhqYpA4" target="_blank" rel="noopener">92</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>92</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=RtxZw9EQMa0" target="_blank" rel="noopener">Likes Aren't Instagram's #1 Signal Anymore. This Is.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=RtxZw9EQMa0" target="_blank" rel="noopener">81</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>81</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=WNNpkLYmXhA" target="_blank" rel="noopener">One Instagram DM Is Worth More Than 10 Followers (Here's Why)</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=WNNpkLYmXhA" target="_blank" rel="noopener">68</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>68</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=VzX3N9s759c" target="_blank" rel="noopener">7 in 10 Customers Leave Your Website Without Ever Asking a Question</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=VzX3N9s759c" target="_blank" rel="noopener">54</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>54</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=YfgDrE6tMug" target="_blank" rel="noopener">Stop Installing On-Site Chat. Your Customers Already Have WhatsApp Open.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=YfgDrE6tMug" target="_blank" rel="noopener">51</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>51</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=oZrAA5UdriY" target="_blank" rel="noopener">Your Best Reviews Are Scattered. Here's Why That's Killing Sales.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=oZrAA5UdriY" target="_blank" rel="noopener">50</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>50</strong></td>
             </tr>
 
           </tbody>
@@ -749,31 +1233,69 @@ They search TikTok and Instagram first, watch a few Reels, then maybe cl</a></td
 </tr>
 
 
-<tr class="week-row" data-week="2" onclick="toggleWeek(2, event)">
+<tr class="week-row" data-week="4" onclick="toggleWeek(4, event)">
   <td><span class="expand-arrow">▸</span> <strong>May 4 – May 10</strong></td>
-  <td class="num"><strong>10</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>3,302</strong></td>
-  <td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td><td class="plat-cell"><div class="plat-views">1,914</div><div class="plat-posts">10 posts</div></td><td class="plat-cell"><div class="plat-views">1,048</div><div class="plat-posts">10 posts</div></td>
-  <td class="plat-cell muted"><div class="plat-views">340</div><div class="plat-posts">10 posts</div></td>
-  <td class="num">107</td>
+  <td class="num"><strong>20</strong><div class="sub-lbl">videos</div></td>
+  <td class="num"><strong>7,600</strong></td>
+  <td class="plat-cell"><div class="plat-views">4,292</div><div class="plat-posts">10 posts</div></td><td class="plat-cell"><div class="plat-views">1,917</div><div class="plat-posts">10 posts</div></td><td class="plat-cell"><div class="plat-views">1,050</div><div class="plat-posts">10 posts</div></td>
+  <td class="plat-cell muted"><div class="plat-views">341</div><div class="plat-posts">10 posts</div></td>
+  <td class="num">108</td>
 </tr>
-<tr class="week-detail" id="week-detail-2">
+<tr class="week-detail" id="week-detail-4">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
         <div class="label">BEST VIDEO THIS WEEK</div>
-        <a class="top-title" href="https://www.tiktok.com/@smash.balloon/video/7637105382980209921" target="_blank" rel="noopener">Batch days feel exhausting because we treat one Reel as one idea — when really, one idea should be five Reels. 
-
-Same insight, different angle: the tutorial, the hook only, the contrarian take, one ex</a>
-        <div class="top-meta"><strong>410</strong> total views · posted on 3 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7637105382980209921" target="_blank" rel="noopener"><span class="plat-pill-label">TikTok</span><span class="plat-pill-views">211</span></a><a class="plat-pill plat-pill-instagram" href="https://www.instagram.com/p/DYEOXbcgVH6/" target="_blank" rel="noopener"><span class="plat-pill-label">Instagram</span><span class="plat-pill-views">154</span></a><a class="plat-pill plat-pill-facebook" href="https://www.facebook.com/reel/956258920499353/" target="_blank" rel="noopener"><span class="plat-pill-label">Facebook</span><span class="plat-pill-views">45</span></a></div>
+        <a class="top-title" href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener">How to Actually Get More Google Reviews</a>
+        <div class="top-meta"><strong>1,807</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,807</span></a></div>
       </div>
       <div class="posts-list">
-        <div class="label">ALL VIDEOS THIS WEEK · 10 unique · ranked by total views</div>
+        <div class="label">ALL VIDEOS THIS WEEK · 20 unique · ranked by total views</div>
         <table class="inner-table">
           <thead><tr><th>Title</th><th>Topic</th><th class="num">YT</th><th class="num">TikTok</th><th class="num">IG</th><th class="num">FB</th><th class="num">Total</th></tr></thead>
           <tbody>
 
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener">How to Actually Get More Google Reviews</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener">1,807</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>1,807</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=taOL193r-iA" target="_blank" rel="noopener">Your Facebook Page Makes Your Website Look Dead</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=taOL193r-iA" target="_blank" rel="noopener">723</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>723</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=tSfRPN9siOA" target="_blank" rel="noopener">Why Every Local Business Post Looks Identical</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=tSfRPN9siOA" target="_blank" rel="noopener">636</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>636</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=wnc1RfPEwWg" target="_blank" rel="noopener">Your Customers Over 35 Didn't Move to TikTok</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=wnc1RfPEwWg" target="_blank" rel="noopener">440</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>440</strong></td>
+            </tr>
 
             <tr>
               <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7637105382980209921" target="_blank" rel="noopener">Batch days feel exhausting because we treat one Reel as one idea — when really, one idea should be five Reels. 
@@ -813,8 +1335,20 @@ Most happy customers nod yes and never do it. Fix the moment, fix the link, ask 
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7636275712189615377" target="_blank" rel="noopener">209</a></td>
               <td class="num"><a href="https://www.instagram.com/p/DX8gCFaCuf6/" target="_blank" rel="noopener">114</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/1148699417390828/" target="_blank" rel="noopener">30</a></td>
-              <td class="num total-col"><strong>353</strong></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1148699417390828/" target="_blank" rel="noopener">31</a></td>
+              <td class="num total-col"><strong>354</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7637834472729185556" target="_blank" rel="noopener">The moment a customer submits your contact form, they don't sit and wait for a reply. They open another tab and message your competitor. 
+
+Whichever business answers first usually wins the sale, and "</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num muted">—</td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7637834472729185556" target="_blank" rel="noopener">216</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYHf4MrgXtj/" target="_blank" rel="noopener">78</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1272798634575258/" target="_blank" rel="noopener">35</a></td>
+              <td class="num total-col"><strong>329</strong></td>
             </tr>
 
             <tr>
@@ -827,18 +1361,6 @@ Most of them never see a fast way to ask, so they leave and book somewhere else 
               <td class="num"><a href="https://www.instagram.com/p/DX9FN_rCMBM/" target="_blank" rel="noopener">99</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1580864766309266/" target="_blank" rel="noopener">16</a></td>
               <td class="num total-col"><strong>329</strong></td>
-            </tr>
-
-            <tr>
-              <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7637834472729185556" target="_blank" rel="noopener">The moment a customer submits your contact form, they don't sit and wait for a reply. They open another tab and message your competitor. 
-
-Whichever business answers first usually wins the sale, and "</a></td>
-              <td><span class="topic-tag">Other</span></td>
-              <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7637834472729185556" target="_blank" rel="noopener">215</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYHf4MrgXtj/" target="_blank" rel="noopener">77</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/1272798634575258/" target="_blank" rel="noopener">35</a></td>
-              <td class="num total-col"><strong>327</strong></td>
             </tr>
 
             <tr>
@@ -879,10 +1401,10 @@ Three things, all fixable in 60 seconds.
 Followers like you. Customers trust you. The bridge between those two is whatever shows up when they open a second tab to v</a></td>
               <td><span class="topic-tag">Instagram strategy</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7636999004072578312" target="_blank" rel="noopener">212</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7636999004072578312" target="_blank" rel="noopener">213</a></td>
               <td class="num"><a href="https://www.instagram.com/p/DYBhIGzCeko/" target="_blank" rel="noopener">58</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1278809653910754/" target="_blank" rel="noopener">42</a></td>
-              <td class="num total-col"><strong>312</strong></td>
+              <td class="num total-col"><strong>313</strong></td>
             </tr>
 
             <tr>
@@ -892,9 +1414,9 @@ In those four seconds, a visitor decides whether your business looks professiona
               <td><span class="topic-tag">Other</span></td>
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7637099494944918800" target="_blank" rel="noopener">200</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DYCNvUglepN/" target="_blank" rel="noopener">60</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DYCNvUglepN/" target="_blank" rel="noopener">61</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/26896963439994137/" target="_blank" rel="noopener">37</a></td>
-              <td class="num total-col"><strong>297</strong></td>
+              <td class="num total-col"><strong>298</strong></td>
             </tr>
 
             <tr>
@@ -903,10 +1425,70 @@ In those four seconds, a visitor decides whether your business looks professiona
 They're still scrolling the same feed they've been on for a decade, and now there's almost no competi</a></td>
               <td><span class="topic-tag">TikTok strategy</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7637823911677201685" target="_blank" rel="noopener">99</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7637823911677201685" target="_blank" rel="noopener">100</a></td>
               <td class="num"><a href="https://www.instagram.com/p/DYHPfChlam5/" target="_blank" rel="noopener">106</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/953191100953771/" target="_blank" rel="noopener">37</a></td>
-              <td class="num total-col"><strong>242</strong></td>
+              <td class="num total-col"><strong>243</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=zoiP-pgwPWc" target="_blank" rel="noopener">Your Contact Form Is Sending Customers to Your Competitor</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=zoiP-pgwPWc" target="_blank" rel="noopener">180</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>180</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=wclV592BgDo" target="_blank" rel="noopener">Every Instagram Follower Googles You Before They Buy</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=wclV592BgDo" target="_blank" rel="noopener">172</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>172</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=YL_M140CFhI" target="_blank" rel="noopener">You Don't Have 12 Seconds. You Have 4.</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=YL_M140CFhI" target="_blank" rel="noopener">150</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>150</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=PPrjEgphypo" target="_blank" rel="noopener">You're Not Running Out of Content, You're Running Out of Angles</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=PPrjEgphypo" target="_blank" rel="noopener">104</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>104</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=rIStIoC_xYI" target="_blank" rel="noopener">The Silent Drop-Off Killing Your Website Sales</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=rIStIoC_xYI" target="_blank" rel="noopener">65</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>65</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=xzQo9-xmJOs" target="_blank" rel="noopener">The One Thing Your Competitor's Website Has That Yours Doesn't</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=xzQo9-xmJOs" target="_blank" rel="noopener">15</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>15</strong></td>
             </tr>
 
           </tbody>
@@ -917,33 +1499,49 @@ They're still scrolling the same feed they've been on for a decade, and now ther
 </tr>
 
 
-<tr class="week-row" data-week="3" onclick="toggleWeek(3, event)">
+<tr class="week-row" data-week="5" onclick="toggleWeek(5, event)">
   <td><span class="expand-arrow">▸</span> <strong>Apr 27 – May 3</strong></td>
-  <td class="num"><strong>2</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>655</strong></td>
-  <td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td><td class="plat-cell"><div class="plat-views">253</div><div class="plat-posts">2 posts</div></td><td class="plat-cell"><div class="plat-views">306</div><div class="plat-posts">2 posts</div></td>
+  <td class="num"><strong>4</strong><div class="sub-lbl">videos</div></td>
+  <td class="num"><strong>2,621</strong></td>
+  <td class="plat-cell"><div class="plat-views">1,966</div><div class="plat-posts">2 posts</div></td><td class="plat-cell"><div class="plat-views">253</div><div class="plat-posts">2 posts</div></td><td class="plat-cell"><div class="plat-views">306</div><div class="plat-posts">2 posts</div></td>
   <td class="plat-cell muted"><div class="plat-views">96</div><div class="plat-posts">2 posts</div></td>
   <td class="num">19</td>
 </tr>
-<tr class="week-detail" id="week-detail-3">
+<tr class="week-detail" id="week-detail-5">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
         <div class="label">BEST VIDEO THIS WEEK</div>
-        <a class="top-title" href="https://www.instagram.com/p/DX4DmNEApPY/" target="_blank" rel="noopener">Followers, likes, reach - none of them tell you if your social media is actually driving business. 
-
-The number that matters: how many people go from your Instagram profile to your website. 
-
-If that </a>
-        <div class="top-meta"><strong>368</strong> total views · posted on 3 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-instagram" href="https://www.instagram.com/p/DX4DmNEApPY/" target="_blank" rel="noopener"><span class="plat-pill-label">Instagram</span><span class="plat-pill-views">162</span></a><a class="plat-pill plat-pill-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7635636324443114769" target="_blank" rel="noopener"><span class="plat-pill-label">TikTok</span><span class="plat-pill-views">144</span></a><a class="plat-pill plat-pill-facebook" href="https://www.facebook.com/reel/1975599513345649/" target="_blank" rel="noopener"><span class="plat-pill-label">Facebook</span><span class="plat-pill-views">62</span></a></div>
+        <a class="top-title" href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener">Your Google Revies Are Trapped (FIX THIS)</a>
+        <div class="top-meta"><strong>1,289</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,289</span></a></div>
       </div>
       <div class="posts-list">
-        <div class="label">ALL VIDEOS THIS WEEK · 2 unique · ranked by total views</div>
+        <div class="label">ALL VIDEOS THIS WEEK · 4 unique · ranked by total views</div>
         <table class="inner-table">
           <thead><tr><th>Title</th><th>Topic</th><th class="num">YT</th><th class="num">TikTok</th><th class="num">IG</th><th class="num">FB</th><th class="num">Total</th></tr></thead>
           <tbody>
 
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener">Your Google Revies Are Trapped (FIX THIS)</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener">1,289</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>1,289</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=Y6JzTuT3gww" target="_blank" rel="noopener">The Number That Tells You If Your Social Media Is Working</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=Y6JzTuT3gww" target="_blank" rel="noopener">677</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>677</strong></td>
+            </tr>
 
             <tr>
               <td class="title-cell"><a href="https://www.instagram.com/p/DX4DmNEApPY/" target="_blank" rel="noopener">Followers, likes, reach - none of them tell you if your social media is actually driving business. 
@@ -981,29 +1579,49 @@ The people visiting your websi</a></td>
 </tr>
 
 
-<tr class="week-row" data-week="4" onclick="toggleWeek(4, event)">
+<tr class="week-row" data-week="6" onclick="toggleWeek(6, event)">
   <td><span class="expand-arrow">▸</span> <strong>Apr 20 – Apr 26</strong></td>
-  <td class="num"><strong>3</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>1,152</strong></td>
-  <td class="plat-cell"><div class="plat-views">0</div><div class="plat-posts">0 posts</div></td><td class="plat-cell"><div class="plat-views">631</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">400</div><div class="plat-posts">3 posts</div></td>
+  <td class="num"><strong>5</strong><div class="sub-lbl">videos</div></td>
+  <td class="num"><strong>3,843</strong></td>
+  <td class="plat-cell"><div class="plat-views">2,691</div><div class="plat-posts">2 posts</div></td><td class="plat-cell"><div class="plat-views">631</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">400</div><div class="plat-posts">3 posts</div></td>
   <td class="plat-cell muted"><div class="plat-views">121</div><div class="plat-posts">3 posts</div></td>
   <td class="num">47</td>
 </tr>
-<tr class="week-detail" id="week-detail-4">
+<tr class="week-detail" id="week-detail-6">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
         <div class="label">BEST VIDEO THIS WEEK</div>
-        <a class="top-title" href="https://www.tiktok.com/@smash.balloon/video/7632687143571180817" target="_blank" rel="noopener">The shift is real! People are exhausted by polished stock photo websites and corporate headshots. They don't trust them anymore.  The businesses winning right now are the ones showing real content on </a>
-        <div class="top-meta"><strong>418</strong> total views · posted on 3 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7632687143571180817" target="_blank" rel="noopener"><span class="plat-pill-label">TikTok</span><span class="plat-pill-views">226</span></a><a class="plat-pill plat-pill-instagram" href="https://www.instagram.com/p/DXjmVzKCmfo/" target="_blank" rel="noopener"><span class="plat-pill-label">Instagram</span><span class="plat-pill-views">147</span></a><a class="plat-pill plat-pill-facebook" href="https://www.facebook.com/reel/2231531900713326/" target="_blank" rel="noopener"><span class="plat-pill-label">Facebook</span><span class="plat-pill-views">45</span></a></div>
+        <a class="top-title" href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener">You Have 60 Seconds Before They Buy From Your Competitor</a>
+        <div class="top-meta"><strong>1,491</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,491</span></a></div>
       </div>
       <div class="posts-list">
-        <div class="label">ALL VIDEOS THIS WEEK · 3 unique · ranked by total views</div>
+        <div class="label">ALL VIDEOS THIS WEEK · 5 unique · ranked by total views</div>
         <table class="inner-table">
           <thead><tr><th>Title</th><th>Topic</th><th class="num">YT</th><th class="num">TikTok</th><th class="num">IG</th><th class="num">FB</th><th class="num">Total</th></tr></thead>
           <tbody>
 
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener">You Have 60 Seconds Before They Buy From Your Competitor</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener">1,491</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>1,491</strong></td>
+            </tr>
+
+            <tr>
+              <td class="title-cell"><a href="https://youtube.com/watch?v=CpRESLvtzDM" target="_blank" rel="noopener">49% of People Now Use TikTok as a Search Engine</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=CpRESLvtzDM" target="_blank" rel="noopener">1,200</a></td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num muted">—</td>
+              <td class="num total-col"><strong>1,200</strong></td>
+            </tr>
 
             <tr>
               <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7632687143571180817" target="_blank" rel="noopener">The shift is real! People are exhausted by polished stock photo websites and corporate headshots. They don't trust them anymore.  The businesses winning right now are the ones showing real content on </a></td>
@@ -1049,22 +1667,22 @@ People are searching "best salon near me" and "how to choose a trainer" i</a></t
 </tr>
 
 
-<tr class="week-row" data-week="5" onclick="toggleWeek(5, event)">
+<tr class="week-row" data-week="7" onclick="toggleWeek(7, event)">
   <td><span class="expand-arrow">▸</span> <strong>Apr 13 – Apr 19</strong></td>
   <td class="num"><strong>8</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>3,221</strong></td>
-  <td class="plat-cell"><div class="plat-views">1,055</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">1,213</div><div class="plat-posts">5 posts</div></td><td class="plat-cell"><div class="plat-views">768</div><div class="plat-posts">5 posts</div></td>
+  <td class="num"><strong>3,233</strong></td>
+  <td class="plat-cell"><div class="plat-views">1,064</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">1,214</div><div class="plat-posts">5 posts</div></td><td class="plat-cell"><div class="plat-views">770</div><div class="plat-posts">5 posts</div></td>
   <td class="plat-cell muted"><div class="plat-views">185</div><div class="plat-posts">5 posts</div></td>
-  <td class="num">97</td>
+  <td class="num">91</td>
 </tr>
-<tr class="week-detail" id="week-detail-5">
+<tr class="week-detail" id="week-detail-7">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
         <div class="label">BEST VIDEO THIS WEEK</div>
         <a class="top-title" href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener">This 30-Second Content Format Gets More Walk-Ins Than Paid Ads</a>
-        <div class="top-meta"><strong>639</strong> total views · posted on 1 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">639</span></a></div>
+        <div class="top-meta"><strong>645</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">645</span></a></div>
       </div>
       <div class="posts-list">
         <div class="label">ALL VIDEOS THIS WEEK · 8 unique · ranked by total views</div>
@@ -1075,12 +1693,12 @@ People are searching "best salon near me" and "how to choose a trainer" i</a></t
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener">This 30-Second Content Format Gets More Walk-Ins Than Paid Ads</a></td>
-              <td><span class="topic-tag">Local business</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener">639</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener">645</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>639</strong></td>
+              <td class="num total-col"><strong>645</strong></td>
             </tr>
 
             <tr>
@@ -1091,10 +1709,10 @@ They pull in live social feeds, real reviews, and customer photos automatically.
 The result? Visitors who came from Instagram feel like the</a></td>
               <td><span class="topic-tag">Reviews</span></td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7629884194746928401" target="_blank" rel="noopener">238</a></td>
+              <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7629884194746928401" target="_blank" rel="noopener">239</a></td>
               <td class="num"><a href="https://www.instagram.com/p/DXQJp4Sj8fc/" target="_blank" rel="noopener">193</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1659409198313106/" target="_blank" rel="noopener">45</a></td>
-              <td class="num total-col"><strong>476</strong></td>
+              <td class="num total-col"><strong>477</strong></td>
             </tr>
 
             <tr>
@@ -1106,9 +1724,9 @@ Here's why three posts a week is</a></td>
               <td><span class="topic-tag">Content strategy</span></td>
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7628182026394291457" target="_blank" rel="noopener">256</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DXEV0T8AIEr/" target="_blank" rel="noopener">142</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DXEV0T8AIEr/" target="_blank" rel="noopener">143</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1940113353532447/" target="_blank" rel="noopener">32</a></td>
-              <td class="num total-col"><strong>430</strong></td>
+              <td class="num total-col"><strong>431</strong></td>
             </tr>
 
             <tr>
@@ -1136,9 +1754,9 @@ Messages feel like a conversation.
               <td><span class="topic-tag">Messaging/WhatsApp</span></td>
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7629884860542258449" target="_blank" rel="noopener">287</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DXQdYzsAElC/" target="_blank" rel="noopener">85</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DXQdYzsAElC/" target="_blank" rel="noopener">86</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1862792161069927/" target="_blank" rel="noopener">46</a></td>
-              <td class="num total-col"><strong>418</strong></td>
+              <td class="num total-col"><strong>419</strong></td>
             </tr>
 
             <tr>
@@ -1159,22 +1777,22 @@ If someone clicked t</a></td>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=-mC_K8OHuC0" target="_blank" rel="noopener">Why Small Businesses Are Ditching Email for WhatsApp</a></td>
-              <td><span class="topic-tag">Messaging/WhatsApp</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=-mC_K8OHuC0" target="_blank" rel="noopener">371</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=-mC_K8OHuC0" target="_blank" rel="noopener">373</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>371</strong></td>
+              <td class="num total-col"><strong>373</strong></td>
             </tr>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=_VV_lssasa4" target="_blank" rel="noopener">Half Your Visitors Leave Over ONE Unanswered Question (Here's Why)</a></td>
               <td><span class="topic-tag">Other</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=_VV_lssasa4" target="_blank" rel="noopener">45</a></td>
+              <td class="num"><a href="https://youtube.com/watch?v=_VV_lssasa4" target="_blank" rel="noopener">46</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>45</strong></td>
+              <td class="num total-col"><strong>46</strong></td>
             </tr>
 
           </tbody>
@@ -1185,22 +1803,22 @@ If someone clicked t</a></td>
 </tr>
 
 
-<tr class="week-row" data-week="6" onclick="toggleWeek(6, event)">
+<tr class="week-row" data-week="8" onclick="toggleWeek(8, event)">
   <td><span class="expand-arrow">▸</span> <strong>Apr 6 – Apr 12</strong></td>
   <td class="num"><strong>12</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>7,304</strong></td>
-  <td class="plat-cell"><div class="plat-views">5,481</div><div class="plat-posts">5 posts</div></td><td class="plat-cell"><div class="plat-views">689</div><div class="plat-posts">5 posts</div></td><td class="plat-cell"><div class="plat-views">936</div><div class="plat-posts">6 posts</div></td>
-  <td class="plat-cell muted"><div class="plat-views">198</div><div class="plat-posts">6 posts</div></td>
-  <td class="num">115</td>
+  <td class="num"><strong>7,338</strong></td>
+  <td class="plat-cell"><div class="plat-views">5,491</div><div class="plat-posts">5 posts</div></td><td class="plat-cell"><div class="plat-views">689</div><div class="plat-posts">5 posts</div></td><td class="plat-cell"><div class="plat-views">958</div><div class="plat-posts">6 posts</div></td>
+  <td class="plat-cell muted"><div class="plat-views">200</div><div class="plat-posts">6 posts</div></td>
+  <td class="num">79</td>
 </tr>
-<tr class="week-detail" id="week-detail-6">
+<tr class="week-detail" id="week-detail-8">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
         <div class="label">BEST VIDEO THIS WEEK</div>
         <a class="top-title" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">Why Facebook is the Best Platform for Local Businesses</a>
-        <div class="top-meta"><strong>1,678</strong> total views · posted on 1 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,678</span></a></div>
+        <div class="top-meta"><strong>1,679</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,679</span></a></div>
       </div>
       <div class="posts-list">
         <div class="label">ALL VIDEOS THIS WEEK · 12 unique · ranked by total views</div>
@@ -1211,22 +1829,22 @@ If someone clicked t</a></td>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">Why Facebook is the Best Platform for Local Businesses</a></td>
-              <td><span class="topic-tag">Facebook strategy</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">1,678</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">1,679</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>1,678</strong></td>
+              <td class="num total-col"><strong>1,679</strong></td>
             </tr>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">The Type of Content Instagram Is Pushing Right Now (It's Not What You Think)</a></td>
-              <td><span class="topic-tag">Instagram strategy</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">1,380</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">1,382</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>1,380</strong></td>
+              <td class="num total-col"><strong>1,382</strong></td>
             </tr>
 
             <tr>
@@ -1241,12 +1859,12 @@ If someone clicked t</a></td>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">Instagram Just Killed the Create Button — What It Means for Your Content</a></td>
-              <td><span class="topic-tag">Instagram strategy</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">1,005</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">1,010</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>1,005</strong></td>
+              <td class="num total-col"><strong>1,010</strong></td>
             </tr>
 
             <tr>
@@ -1258,19 +1876,19 @@ What this means → Instagram is telling you exactly what to focus </a></td>
               <td><span class="topic-tag">Instagram strategy</span></td>
               <td class="num muted">—</td>
               <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7626197243153894673" target="_blank" rel="noopener">171</a></td>
-              <td class="num"><a href="https://www.instagram.com/p/DW2kXu5jJ8H/" target="_blank" rel="noopener">229</a></td>
-              <td class="num"><a href="https://www.facebook.com/reel/1302131861797182/" target="_blank" rel="noopener">36</a></td>
-              <td class="num total-col"><strong>436</strong></td>
+              <td class="num"><a href="https://www.instagram.com/p/DW2kXu5jJ8H/" target="_blank" rel="noopener">249</a></td>
+              <td class="num"><a href="https://www.facebook.com/reel/1302131861797182/" target="_blank" rel="noopener">38</a></td>
+              <td class="num total-col"><strong>458</strong></td>
             </tr>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=2WxHPhrAeZs" target="_blank" rel="noopener">Your 5-Star Reviews Are Invisible and This Fixes It</a></td>
-              <td><span class="topic-tag">Reviews</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=2WxHPhrAeZs" target="_blank" rel="noopener">376</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=2WxHPhrAeZs" target="_blank" rel="noopener">378</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>376</strong></td>
+              <td class="num total-col"><strong>378</strong></td>
             </tr>
 
             <tr>
@@ -1332,9 +1950,9 @@ Review Alerts bring your best reviews to your visitors while they browse. Real n
               <td><span class="topic-tag">Reviews</span></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num"><a href="https://www.instagram.com/p/DW7t3-2kXw7/" target="_blank" rel="noopener">157</a></td>
+              <td class="num"><a href="https://www.instagram.com/p/DW7t3-2kXw7/" target="_blank" rel="noopener">159</a></td>
               <td class="num"><a href="https://www.facebook.com/reel/1674761583967874/" target="_blank" rel="noopener">23</a></td>
-              <td class="num total-col"><strong>180</strong></td>
+              <td class="num total-col"><strong>182</strong></td>
             </tr>
 
             <tr>
@@ -1357,22 +1975,22 @@ Review Alerts bring your best reviews to your visitors while they browse. Real n
 </tr>
 
 
-<tr class="week-row" data-week="7" onclick="toggleWeek(7, event)">
+<tr class="week-row" data-week="9" onclick="toggleWeek(9, event)">
   <td><span class="expand-arrow">▸</span> <strong>Mar 30 – Apr 5</strong></td>
   <td class="num"><strong>6</strong><div class="sub-lbl">videos</div></td>
-  <td class="num"><strong>2,562</strong></td>
-  <td class="plat-cell"><div class="plat-views">1,523</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">461</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">443</div><div class="plat-posts">3 posts</div></td>
+  <td class="num"><strong>2,570</strong></td>
+  <td class="plat-cell"><div class="plat-views">1,531</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">461</div><div class="plat-posts">3 posts</div></td><td class="plat-cell"><div class="plat-views">443</div><div class="plat-posts">3 posts</div></td>
   <td class="plat-cell muted"><div class="plat-views">135</div><div class="plat-posts">3 posts</div></td>
-  <td class="num">69</td>
+  <td class="num">63</td>
 </tr>
-<tr class="week-detail" id="week-detail-7">
+<tr class="week-detail" id="week-detail-9">
   <td colspan="8">
     <div class="week-detail-inner">
       <div class="week-top-post">
         <div class="label">BEST VIDEO THIS WEEK</div>
         <a class="top-title" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">3 Reasons People Visit Your Profile and Don't Follow You</a>
-        <div class="top-meta"><strong>1,241</strong> total views · posted on 1 platforms</div>
-        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,241</span></a></div>
+        <div class="top-meta"><strong>1,248</strong> total views · posted on 1 platforms</div>
+        <div class="platforms-row"><a class="plat-pill plat-pill-youtube_shorts" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener"><span class="plat-pill-label">YouTube Shorts</span><span class="plat-pill-views">1,248</span></a></div>
       </div>
       <div class="posts-list">
         <div class="label">ALL VIDEOS THIS WEEK · 6 unique · ranked by total views</div>
@@ -1384,11 +2002,11 @@ Review Alerts bring your best reviews to your visitors while they browse. Real n
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">3 Reasons People Visit Your Profile and Don't Follow You</a></td>
               <td><span class="topic-tag">Other</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">1,241</a></td>
+              <td class="num"><a href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">1,248</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>1,241</strong></td>
+              <td class="num total-col"><strong>1,248</strong></td>
             </tr>
 
             <tr>
@@ -1445,12 +2063,12 @@ Because a share means "this pers</a></td>
 
             <tr>
               <td class="title-cell"><a href="https://youtube.com/watch?v=XTTCS1-YZhQ" target="_blank" rel="noopener">Make Content Worth Sharing!</a></td>
-              <td><span class="topic-tag">Content strategy</span></td>
-              <td class="num"><a href="https://youtube.com/watch?v=XTTCS1-YZhQ" target="_blank" rel="noopener">44</a></td>
+              <td><span class="topic-tag">Other</span></td>
+              <td class="num"><a href="https://youtube.com/watch?v=XTTCS1-YZhQ" target="_blank" rel="noopener">45</a></td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
               <td class="num muted">—</td>
-              <td class="num total-col"><strong>44</strong></td>
+              <td class="num total-col"><strong>45</strong></td>
             </tr>
 
           </tbody>
@@ -1468,7 +2086,7 @@ Because a share means "this pers</a></td>
 <section>
   <div class="section-title">Publishing Rhythm · videos per week</div>
   <div class="card">
-    <div class="consistency-chart"><div class="consistency-col" title="Mar 30 – Apr 5: 6 videos"><div class="consistency-fill" style="height:50%"></div><div class="consistency-num">6</div><div class="consistency-lbl">Mar 30</div></div><div class="consistency-col" title="Apr 6 – Apr 12: 12 videos"><div class="consistency-fill" style="height:100%"></div><div class="consistency-num">12</div><div class="consistency-lbl">Apr 6</div></div><div class="consistency-col" title="Apr 13 – Apr 19: 8 videos"><div class="consistency-fill" style="height:67%"></div><div class="consistency-num">8</div><div class="consistency-lbl">Apr 13</div></div><div class="consistency-col" title="Apr 20 – Apr 26: 3 videos"><div class="consistency-fill" style="height:25%"></div><div class="consistency-num">3</div><div class="consistency-lbl">Apr 20</div></div><div class="consistency-col" title="Apr 27 – May 3: 2 videos"><div class="consistency-fill" style="height:17%"></div><div class="consistency-num">2</div><div class="consistency-lbl">Apr 27</div></div><div class="consistency-col" title="May 4 – May 10: 10 videos"><div class="consistency-fill" style="height:83%"></div><div class="consistency-num">10</div><div class="consistency-lbl">May 4</div></div><div class="consistency-col" title="May 11 – May 17: 11 videos"><div class="consistency-fill" style="height:92%"></div><div class="consistency-num">11</div><div class="consistency-lbl">May 11</div></div><div class="consistency-col" title="May 18 – May 24: 0 videos"><div class="consistency-fill" style="height:0%"></div><div class="consistency-num">0</div><div class="consistency-lbl">May 18</div></div></div>
+    <div class="consistency-chart"><div class="consistency-col" title="Mar 30 – Apr 5: 6 videos"><div class="consistency-fill" style="height:27%"></div><div class="consistency-num">6</div><div class="consistency-lbl">Mar 30</div></div><div class="consistency-col" title="Apr 6 – Apr 12: 12 videos"><div class="consistency-fill" style="height:55%"></div><div class="consistency-num">12</div><div class="consistency-lbl">Apr 6</div></div><div class="consistency-col" title="Apr 13 – Apr 19: 8 videos"><div class="consistency-fill" style="height:36%"></div><div class="consistency-num">8</div><div class="consistency-lbl">Apr 13</div></div><div class="consistency-col" title="Apr 20 – Apr 26: 5 videos"><div class="consistency-fill" style="height:23%"></div><div class="consistency-num">5</div><div class="consistency-lbl">Apr 20</div></div><div class="consistency-col" title="Apr 27 – May 3: 4 videos"><div class="consistency-fill" style="height:18%"></div><div class="consistency-num">4</div><div class="consistency-lbl">Apr 27</div></div><div class="consistency-col" title="May 4 – May 10: 20 videos"><div class="consistency-fill" style="height:91%"></div><div class="consistency-num">20</div><div class="consistency-lbl">May 4</div></div><div class="consistency-col" title="May 11 – May 17: 22 videos"><div class="consistency-fill" style="height:100%"></div><div class="consistency-num">22</div><div class="consistency-lbl">May 11</div></div><div class="consistency-col" title="May 18 – May 24: 13 videos"><div class="consistency-fill" style="height:59%"></div><div class="consistency-num">13</div><div class="consistency-lbl">May 18</div></div><div class="consistency-col" title="May 25 – May 31: 10 videos"><div class="consistency-fill" style="height:45%"></div><div class="consistency-num">10</div><div class="consistency-lbl">May 25</div></div><div class="consistency-col" title="Jun 1 – Jun 7: 0 videos"><div class="consistency-fill" style="height:0%"></div><div class="consistency-num">0</div><div class="consistency-lbl">Jun 1</div></div></div>
     <p class="note">Each bar is one week of Q2. Consistency matters for algorithmic distribution on all four platforms — steady output beats spiky output.</p>
   </div>
 </section>
@@ -1477,10 +2095,10 @@ Because a share means "this pers</a></td>
 <section>
   <div class="section-title">Q1 2026 Overall · for context (2026-01-01 → 2026-03-31)</div>
   <div class="q1-snapshot">
-    <div class="q1-stat"><div class="lbl">Views</div><div class="val">34,271</div></div>
+    <div class="q1-stat"><div class="lbl">Views</div><div class="val">34,838</div></div>
     <div class="q1-stat"><div class="lbl">Posts</div><div class="val">153</div></div>
-    <div class="q1-stat"><div class="lbl">Engagement</div><div class="val">914</div></div>
-    <div class="q1-stat"><div class="lbl">Subs gained</div><div class="val">25</div></div>
+    <div class="q1-stat"><div class="lbl">Engagement</div><div class="val">739</div></div>
+    <div class="q1-stat"><div class="lbl">Subs gained</div><div class="val">26</div></div>
   </div>
 </section>
 
@@ -1496,15 +2114,15 @@ Because a share means "this pers</a></td>
     
   </div>
   <div class="platform-big">
-    <div class="big-num">7,821</div>
+    <div class="big-num">22,218</div>
     <div class="big-sub">total views Q2</div>
-    <div class="delta delta-down">-62.7% vs Q1 full quarter</div>
+    <div class="delta delta-up">+3.7% vs Q1 full quarter</div>
   </div>
   <div class="platform-grid">
-    <div><div class="mini-label">Posts</div><div class="mini-val">10</div></div>
-    <div><div class="mini-label">Avg Views</div><div class="mini-val">782</div></div>
-    <div><div class="mini-label">Engagement</div><div class="mini-val">48</div></div>
-    <div><div class="mini-label">Eng. Rate</div><div class="mini-val">0.61%</div></div>
+    <div><div class="mini-label">Posts</div><div class="mini-val">47</div></div>
+    <div><div class="mini-label">Avg Views</div><div class="mini-val">472</div></div>
+    <div><div class="mini-label">Engagement</div><div class="mini-val">0</div></div>
+    <div><div class="mini-label">Eng. Rate</div><div class="mini-val">0.00%</div></div>
   </div>
 </div>
 
@@ -1515,15 +2133,15 @@ Because a share means "this pers</a></td>
     
   </div>
   <div class="platform-big">
-    <div class="big-num">7,279</div>
+    <div class="big-num">10,715</div>
     <div class="big-sub">total views Q2</div>
-    <div class="delta delta-up">+9.1% vs Q1 full quarter</div>
+    <div class="delta delta-up">+57.8% vs Q1 full quarter</div>
   </div>
   <div class="platform-grid">
-    <div><div class="mini-label">Posts</div><div class="mini-val">38</div></div>
-    <div><div class="mini-label">Avg Views</div><div class="mini-val">191</div></div>
-    <div><div class="mini-label">Engagement</div><div class="mini-val">223</div></div>
-    <div><div class="mini-label">Eng. Rate</div><div class="mini-val">3.06%</div></div>
+    <div><div class="mini-label">Posts</div><div class="mini-val">51</div></div>
+    <div><div class="mini-label">Avg Views</div><div class="mini-val">210</div></div>
+    <div><div class="mini-label">Engagement</div><div class="mini-val">299</div></div>
+    <div><div class="mini-label">Eng. Rate</div><div class="mini-val">2.79%</div></div>
   </div>
 </div>
 
@@ -1534,15 +2152,15 @@ Because a share means "this pers</a></td>
     
   </div>
   <div class="platform-big">
-    <div class="big-num">5,256</div>
+    <div class="big-num">6,525</div>
     <div class="big-sub">total views Q2</div>
-    <div class="delta delta-down">-14.1% vs Q1 full quarter</div>
+    <div class="delta delta-up">+6.6% vs Q1 full quarter</div>
   </div>
   <div class="platform-grid">
-    <div><div class="mini-label">Posts</div><div class="mini-val">39</div></div>
-    <div><div class="mini-label">Avg Views</div><div class="mini-val">134</div></div>
-    <div><div class="mini-label">Engagement</div><div class="mini-val">242</div></div>
-    <div><div class="mini-label">Eng. Rate</div><div class="mini-val">4.60%</div></div>
+    <div><div class="mini-label">Posts</div><div class="mini-val">52</div></div>
+    <div><div class="mini-label">Avg Views</div><div class="mini-val">125</div></div>
+    <div><div class="mini-label">Engagement</div><div class="mini-val">307</div></div>
+    <div><div class="mini-label">Eng. Rate</div><div class="mini-val">4.70%</div></div>
   </div>
 </div>
 
@@ -1553,13 +2171,13 @@ Because a share means "this pers</a></td>
     <span class="badge">Supporting</span>
   </div>
   <div class="platform-big">
-    <div class="big-num">1,508</div>
+    <div class="big-num">1,999</div>
     <div class="big-sub">total views Q2</div>
-    <div class="delta delta-up">+194.0% vs Q1 full quarter</div>
+    <div class="delta delta-up">+289.7% vs Q1 full quarter</div>
   </div>
   <div class="platform-grid">
-    <div><div class="mini-label">Posts</div><div class="mini-val">43</div></div>
-    <div><div class="mini-label">Avg Views</div><div class="mini-val">35</div></div>
+    <div><div class="mini-label">Posts</div><div class="mini-val">58</div></div>
+    <div><div class="mini-label">Avg Views</div><div class="mini-val">34</div></div>
     <div><div class="mini-label">Engagement</div><div class="mini-val">0</div></div>
     <div><div class="mini-label">Eng. Rate</div><div class="mini-val">0.00%</div></div>
   </div>
@@ -1585,44 +2203,109 @@ Because a share means "this pers</a></td>
 <tr>
   <td class="rank">1</td>
   <td class="title-cell">
-    <a class="vid-title" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">Why Facebook is the Best Platform for Local Businesses</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">▶ 1,678</a></div>
+    <a class="vid-title" href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener">How to Actually Get More Google Reviews</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener">▶ 1,807</a></div>
   </td>
-  <td><span class="topic-tag">Facebook strategy</span></td>
+  <td><span class="topic-tag">Other</span></td>
   <td>
-    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener" title="YouTube Shorts: 1,678 views — open"></a></div>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=3hb-ABeuzuQ" target="_blank" rel="noopener" title="YouTube Shorts: 1,807 views — open"></a></div>
   </td>
-  <td class="num total-col"><strong>1,678</strong></td>
+  <td class="num total-col"><strong>1,807</strong></td>
 </tr>
 
 <tr>
   <td class="rank">2</td>
   <td class="title-cell">
-    <a class="vid-title" href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">The Type of Content Instagram Is Pushing Right Now (It's Not What You Think)</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">▶ 1,380</a></div>
+    <a class="vid-title" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">Why Facebook is the Best Platform for Local Businesses</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener">▶ 1,679</a></div>
   </td>
-  <td><span class="topic-tag">Instagram strategy</span></td>
+  <td><span class="topic-tag">Other</span></td>
   <td>
-    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener" title="YouTube Shorts: 1,380 views — open"></a></div>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=K039jj6viuI" target="_blank" rel="noopener" title="YouTube Shorts: 1,679 views — open"></a></div>
   </td>
-  <td class="num total-col"><strong>1,380</strong></td>
+  <td class="num total-col"><strong>1,679</strong></td>
 </tr>
 
 <tr>
   <td class="rank">3</td>
   <td class="title-cell">
-    <a class="vid-title" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">3 Reasons People Visit Your Profile and Don't Follow You</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">▶ 1,241</a></div>
+    <a class="vid-title" href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener">You Have 60 Seconds Before They Buy From Your Competitor</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener">▶ 1,491</a></div>
   </td>
   <td><span class="topic-tag">Other</span></td>
   <td>
-    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener" title="YouTube Shorts: 1,241 views — open"></a></div>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=0l1Pee0XtCE" target="_blank" rel="noopener" title="YouTube Shorts: 1,491 views — open"></a></div>
   </td>
-  <td class="num total-col"><strong>1,241</strong></td>
+  <td class="num total-col"><strong>1,491</strong></td>
 </tr>
 
 <tr>
   <td class="rank">4</td>
+  <td class="title-cell">
+    <a class="vid-title" href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener">Why Your Local Business Loses Sales After 8pm</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener">▶ 1,454</a></div>
+  </td>
+  <td><span class="topic-tag">Other</span></td>
+  <td>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=9kGyPjHNT6c" target="_blank" rel="noopener" title="YouTube Shorts: 1,454 views — open"></a></div>
+  </td>
+  <td class="num total-col"><strong>1,454</strong></td>
+</tr>
+
+<tr>
+  <td class="rank">5</td>
+  <td class="title-cell">
+    <a class="vid-title" href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">The Type of Content Instagram Is Pushing Right Now (It's Not What You Think)</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener">▶ 1,382</a></div>
+  </td>
+  <td><span class="topic-tag">Other</span></td>
+  <td>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=CfBO3qr04bc" target="_blank" rel="noopener" title="YouTube Shorts: 1,382 views — open"></a></div>
+  </td>
+  <td class="num total-col"><strong>1,382</strong></td>
+</tr>
+
+<tr>
+  <td class="rank">6</td>
+  <td class="title-cell">
+    <a class="vid-title" href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener">Your Google Revies Are Trapped (FIX THIS)</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener">▶ 1,289</a></div>
+  </td>
+  <td><span class="topic-tag">Other</span></td>
+  <td>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=Lid82S24Rjs" target="_blank" rel="noopener" title="YouTube Shorts: 1,289 views — open"></a></div>
+  </td>
+  <td class="num total-col"><strong>1,289</strong></td>
+</tr>
+
+<tr>
+  <td class="rank">7</td>
+  <td class="title-cell">
+    <a class="vid-title" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">3 Reasons People Visit Your Profile and Don't Follow You</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener">▶ 1,248</a></div>
+  </td>
+  <td><span class="topic-tag">Other</span></td>
+  <td>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=yVyVaU-vqFg" target="_blank" rel="noopener" title="YouTube Shorts: 1,248 views — open"></a></div>
+  </td>
+  <td class="num total-col"><strong>1,248</strong></td>
+</tr>
+
+<tr>
+  <td class="rank">8</td>
+  <td class="title-cell">
+    <a class="vid-title" href="https://youtube.com/watch?v=CpRESLvtzDM" target="_blank" rel="noopener">49% of People Now Use TikTok as a Search Engine</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=CpRESLvtzDM" target="_blank" rel="noopener">▶ 1,200</a></div>
+  </td>
+  <td><span class="topic-tag">Other</span></td>
+  <td>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=CpRESLvtzDM" target="_blank" rel="noopener" title="YouTube Shorts: 1,200 views — open"></a></div>
+  </td>
+  <td class="num total-col"><strong>1,200</strong></td>
+</tr>
+
+<tr>
+  <td class="rank">9</td>
   <td class="title-cell">
     <a class="vid-title" href="https://youtube.com/watch?v=JpUctj0bTnY" target="_blank" rel="noopener">1 In 3 People Don't Google Businesses Anymore. Here's What They Do Instead</a>
     <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=JpUctj0bTnY" target="_blank" rel="noopener">▶ 1,042</a></div>
@@ -1635,97 +2318,16 @@ Because a share means "this pers</a></td>
 </tr>
 
 <tr>
-  <td class="rank">5</td>
-  <td class="title-cell">
-    <a class="vid-title" href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">Instagram Just Killed the Create Button — What It Means for Your Content</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">▶ 1,005</a></div>
-  </td>
-  <td><span class="topic-tag">Instagram strategy</span></td>
-  <td>
-    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener" title="YouTube Shorts: 1,005 views — open"></a></div>
-  </td>
-  <td class="num total-col"><strong>1,005</strong></td>
-</tr>
-
-<tr>
-  <td class="rank">6</td>
-  <td class="title-cell">
-    <a class="vid-title" href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener">A local business I looked at had 200 reviews across Google, Facebook, and Yelp, and zero on their website.
-
-Customers don't open three tabs. They check one source and either trust you in 10 seconds or</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener">♪ 557</a> · <a class="mini-plat mini-plat-instagram" href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener">◎ 173</a> · <a class="mini-plat mini-plat-facebook" href="https://www.facebook.com/reel/903460828870531/" target="_blank" rel="noopener">f 19</a></div>
-  </td>
-  <td><span class="topic-tag">Reviews</span></td>
-  <td>
-    <div class="split-bar"><a class="split-seg split-tiktok" style="width:74.4%" href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener" title="TikTok: 557 views — open"></a><a class="split-seg split-instagram" style="width:23.1%" href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener" title="Instagram: 173 views — open"></a><a class="split-seg split-facebook" style="width:2.5%" href="https://www.facebook.com/reel/903460828870531/" target="_blank" rel="noopener" title="Facebook: 19 views — open"></a></div>
-  </td>
-  <td class="num total-col"><strong>749</strong></td>
-</tr>
-
-<tr>
-  <td class="rank">7</td>
-  <td class="title-cell">
-    <a class="vid-title" href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener">This 30-Second Content Format Gets More Walk-Ins Than Paid Ads</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener">▶ 639</a></div>
-  </td>
-  <td><span class="topic-tag">Local business</span></td>
-  <td>
-    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=dMVAwrg-LbM" target="_blank" rel="noopener" title="YouTube Shorts: 639 views — open"></a></div>
-  </td>
-  <td class="num total-col"><strong>639</strong></td>
-</tr>
-
-<tr>
-  <td class="rank">8</td>
-  <td class="title-cell">
-    <a class="vid-title" href="https://www.tiktok.com/@smash.balloon/video/7629884194746928401" target="_blank" rel="noopener">The smartest small business websites don't just sit there.
-
-They pull in live social feeds, real reviews, and customer photos automatically.
-
-The result? Visitors who came from Instagram feel like the</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7629884194746928401" target="_blank" rel="noopener">♪ 238</a> · <a class="mini-plat mini-plat-instagram" href="https://www.instagram.com/p/DXQJp4Sj8fc/" target="_blank" rel="noopener">◎ 193</a> · <a class="mini-plat mini-plat-facebook" href="https://www.facebook.com/reel/1659409198313106/" target="_blank" rel="noopener">f 45</a></div>
-  </td>
-  <td><span class="topic-tag">Reviews</span></td>
-  <td>
-    <div class="split-bar"><a class="split-seg split-tiktok" style="width:50.0%" href="https://www.tiktok.com/@smash.balloon/video/7629884194746928401" target="_blank" rel="noopener" title="TikTok: 238 views — open"></a><a class="split-seg split-instagram" style="width:40.5%" href="https://www.instagram.com/p/DXQJp4Sj8fc/" target="_blank" rel="noopener" title="Instagram: 193 views — open"></a><a class="split-seg split-facebook" style="width:9.5%" href="https://www.facebook.com/reel/1659409198313106/" target="_blank" rel="noopener" title="Facebook: 45 views — open"></a></div>
-  </td>
-  <td class="num total-col"><strong>476</strong></td>
-</tr>
-
-<tr>
-  <td class="rank">9</td>
-  <td class="title-cell">
-    <a class="vid-title" href="https://www.tiktok.com/@smash.balloon/video/7625138771838717200" target="_blank" rel="noopener">You're losing followers before they even follow you.
-
-It's not your content. It's your profile.
-
-3 things to fix today:
-→ Profile photo (no logos, no blurry pics from 2019)
-→ Bio (one line that says e</a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7625138771838717200" target="_blank" rel="noopener">♪ 228</a> · <a class="mini-plat mini-plat-instagram" href="https://www.instagram.com/p/DWvOLwrjAFz/" target="_blank" rel="noopener">◎ 156</a> · <a class="mini-plat mini-plat-facebook" href="https://www.facebook.com/reel/2831404767207223/" target="_blank" rel="noopener">f 85</a></div>
-  </td>
-  <td><span class="topic-tag">Content strategy</span></td>
-  <td>
-    <div class="split-bar"><a class="split-seg split-tiktok" style="width:48.6%" href="https://www.tiktok.com/@smash.balloon/video/7625138771838717200" target="_blank" rel="noopener" title="TikTok: 228 views — open"></a><a class="split-seg split-instagram" style="width:33.3%" href="https://www.instagram.com/p/DWvOLwrjAFz/" target="_blank" rel="noopener" title="Instagram: 156 views — open"></a><a class="split-seg split-facebook" style="width:18.1%" href="https://www.facebook.com/reel/2831404767207223/" target="_blank" rel="noopener" title="Facebook: 85 views — open"></a></div>
-  </td>
-  <td class="num total-col"><strong>469</strong></td>
-</tr>
-
-<tr>
   <td class="rank">10</td>
   <td class="title-cell">
-    <a class="vid-title" href="https://www.instagram.com/p/DW2kXu5jJ8H/" target="_blank" rel="noopener">Instagram just completely redesigned the bottom of your app.
-
-The Create button is gone. Reels and DMs now sit in the two main spots.
-
-What this means → Instagram is telling you exactly what to focus </a>
-    <div class="vid-meta"><a class="mini-plat mini-plat-tiktok" href="https://www.tiktok.com/@smash.balloon/video/7626197243153894673" target="_blank" rel="noopener">♪ 171</a> · <a class="mini-plat mini-plat-instagram" href="https://www.instagram.com/p/DW2kXu5jJ8H/" target="_blank" rel="noopener">◎ 229</a> · <a class="mini-plat mini-plat-facebook" href="https://www.facebook.com/reel/1302131861797182/" target="_blank" rel="noopener">f 36</a></div>
+    <a class="vid-title" href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">Instagram Just Killed the Create Button — What It Means for Your Content</a>
+    <div class="vid-meta"><a class="mini-plat mini-plat-youtube_shorts" href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener">▶ 1,010</a></div>
   </td>
-  <td><span class="topic-tag">Instagram strategy</span></td>
+  <td><span class="topic-tag">Other</span></td>
   <td>
-    <div class="split-bar"><a class="split-seg split-tiktok" style="width:39.2%" href="https://www.tiktok.com/@smash.balloon/video/7626197243153894673" target="_blank" rel="noopener" title="TikTok: 171 views — open"></a><a class="split-seg split-instagram" style="width:52.5%" href="https://www.instagram.com/p/DW2kXu5jJ8H/" target="_blank" rel="noopener" title="Instagram: 229 views — open"></a><a class="split-seg split-facebook" style="width:8.3%" href="https://www.facebook.com/reel/1302131861797182/" target="_blank" rel="noopener" title="Facebook: 36 views — open"></a></div>
+    <div class="split-bar"><a class="split-seg split-youtube_shorts" style="width:100.0%" href="https://youtube.com/watch?v=8uCRXuCAB3o" target="_blank" rel="noopener" title="YouTube Shorts: 1,010 views — open"></a></div>
   </td>
-  <td class="num total-col"><strong>436</strong></td>
+  <td class="num total-col"><strong>1,010</strong></td>
 </tr>
     </tbody>
   </table>
@@ -1750,53 +2352,79 @@ What this means → Instagram is telling you exactly what to focus </a>
     <tbody>
       
 <tr>
-  <td class="title-cell"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">Mosseri's been telling us this for a year and most accounts still don't believe it.
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7641937594028297492" target="_blank" rel="noopener" title="The right review on the right page closes the sale. 
+
+A cupcake review next to your cupcak">The right review on the right page closes the sale. 
+
+A cupcake review next to your cupcak</a></td>
+  <td class="num"><a href="https://youtube.com/watch?v=4klNuz_PjW0" target="_blank" rel="noopener">19</a></td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7641937594028297492" target="_blank" rel="noopener">665</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYlpSp7E0b8/" target="_blank" rel="noopener">70</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/878997805252137/" target="_blank" rel="noopener">6</a></td>
+  <td><span class="chip chip-small">TikTok</span></td>
+  <td class="variance-cell">110.8×</td>
+</tr>
+
+<tr>
+  <td class="title-cell"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener" title="Mosseri's been telling us this for a year and most accounts still don't believe it.
+
+Share">Mosseri's been telling us this for a year and most accounts still don't believe it.
 
 Share</a></td>
   <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7639700657829661972" target="_blank" rel="noopener">108</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">151</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/1002101812159185/" target="_blank" rel="noopener">2</a></td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7639700657829661972" target="_blank" rel="noopener">110</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYW5_pAiXo3/" target="_blank" rel="noopener">156</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/1002101812159185/" target="_blank" rel="noopener">3</a></td>
   <td><span class="chip chip-small">Instagram</span></td>
-  <td class="variance-cell">75.5×</td>
+  <td class="variance-cell">52.0×</td>
 </tr>
 
 <tr>
-  <td class="title-cell"><a href="https://www.instagram.com/p/DYbVAjLDqA5/" target="_blank" rel="noopener">Most local businesses still build their entire marketing strategy around Google. 
+  <td class="title-cell"><a href="https://www.instagram.com/p/DYbVAjLDqA5/" target="_blank" rel="noopener" title="Most local businesses still build their entire marketing strategy around Google. 
+
+Their c">Most local businesses still build their entire marketing strategy around Google. 
 
 Their c</a></td>
   <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640718860747820309" target="_blank" rel="noopener">112</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DYbVAjLDqA5/" target="_blank" rel="noopener">130</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/985033297340671/" target="_blank" rel="noopener">2</a></td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640718860747820309" target="_blank" rel="noopener">113</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYbVAjLDqA5/" target="_blank" rel="noopener">140</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/985033297340671/" target="_blank" rel="noopener">3</a></td>
   <td><span class="chip chip-small">Instagram</span></td>
-  <td class="variance-cell">65.0×</td>
+  <td class="variance-cell">46.7×</td>
 </tr>
 
 <tr>
-  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener">A local business I looked at had 200 reviews across Google, Facebook, and Yelp, and zero o</a></td>
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener" title="A local business I looked at had 200 reviews across Google, Facebook, and Yelp, and zero o">A local business I looked at had 200 reviews across Google, Facebook, and Yelp, and zero o</a></td>
   <td class="num muted">—</td>
   <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640089693522087189" target="_blank" rel="noopener">557</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener">173</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYW9pI6E9w1/" target="_blank" rel="noopener">179</a></td>
   <td class="num"><a href="https://www.facebook.com/reel/903460828870531/" target="_blank" rel="noopener">19</a></td>
   <td><span class="chip chip-small">TikTok</span></td>
   <td class="variance-cell">29.3×</td>
 </tr>
 
 <tr>
-  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7640838176466062613" target="_blank" rel="noopener">Most small business websites are open 24 hours a day and can answer zero questions. 
-
-A co</a></td>
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7644571146314059028" target="_blank" rel="noopener" title="The local businesses with the best Instagram presence almost always have the most dated-lo">The local businesses with the best Instagram presence almost always have the most dated-lo</a></td>
   <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640838176466062613" target="_blank" rel="noopener">534</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DYcKBOqEbZJ/" target="_blank" rel="noopener">126</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/1300940338843031/" target="_blank" rel="noopener">24</a></td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7644571146314059028" target="_blank" rel="noopener">415</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYwXXwnTIkg/" target="_blank" rel="noopener">95</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/1631336154602510/" target="_blank" rel="noopener">21</a></td>
   <td><span class="chip chip-small">TikTok</span></td>
-  <td class="variance-cell">22.2×</td>
+  <td class="variance-cell">19.8×</td>
 </tr>
 
 <tr>
-  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7636359485795110145" target="_blank" rel="noopener">Visitors land on your site every day with real questions about pricing, availability, what</a></td>
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7641937242272861461" target="_blank" rel="noopener" title="Adding a WhatsApp chat button to your WordPress site takes 5 minutes, and most local busin">Adding a WhatsApp chat button to your WordPress site takes 5 minutes, and most local busin</a></td>
+  <td class="num muted">—</td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7641937242272861461" target="_blank" rel="noopener">302</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYj385yD20T/" target="_blank" rel="noopener">133</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/1013515997679039/" target="_blank" rel="noopener">22</a></td>
+  <td><span class="chip chip-small">TikTok</span></td>
+  <td class="variance-cell">13.7×</td>
+</tr>
+
+<tr>
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7636359485795110145" target="_blank" rel="noopener" title="Visitors land on your site every day with real questions about pricing, availability, what">Visitors land on your site every day with real questions about pricing, availability, what</a></td>
   <td class="num muted">—</td>
   <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7636359485795110145" target="_blank" rel="noopener">214</a></td>
   <td class="num"><a href="https://www.instagram.com/p/DX9FN_rCMBM/" target="_blank" rel="noopener">99</a></td>
@@ -1806,62 +2434,41 @@ A co</a></td>
 </tr>
 
 <tr>
-  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7629314437584866576" target="_blank" rel="noopener">Your Instagram is doing the work. Your website is undoing it. 
-
-That gap between your soci</a></td>
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7645188619380231445" target="_blank" rel="noopener" title="Restaurants and hotels lose bookings on the page where the decision actually gets made bec">Restaurants and hotels lose bookings on the page where the decision actually gets made bec</a></td>
   <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7629314437584866576" target="_blank" rel="noopener">213</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DXMMmSaDmon/" target="_blank" rel="noopener">176</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/2400132650488218/" target="_blank" rel="noopener">27</a></td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7645188619380231445" target="_blank" rel="noopener">308</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DY6WDNTjlCw/" target="_blank" rel="noopener">25</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/1641472830488378/" target="_blank" rel="noopener">47</a></td>
   <td><span class="chip chip-small">TikTok</span></td>
-  <td class="variance-cell">7.9×</td>
+  <td class="variance-cell">12.3×</td>
 </tr>
 
 <tr>
-  <td class="title-cell"><a href="https://www.instagram.com/p/DYXYHDMAcZb/" target="_blank" rel="noopener">One DM is worth more than ten followers, and probably closer to a hundred.
+  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7642496079069531413" target="_blank" rel="noopener" title="Someone's on your site at 9:30pm wanting to ask one question. 
+
+Your phone goes to voicema">Someone's on your site at 9:30pm wanting to ask one question. 
+
+Your phone goes to voicema</a></td>
+  <td class="num muted">—</td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7642496079069531413" target="_blank" rel="noopener">285</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYnqO44lN0t/" target="_blank" rel="noopener">110</a></td>
+  <td class="num"><a href="https://www.facebook.com/reel/990850543347464/" target="_blank" rel="noopener">32</a></td>
+  <td><span class="chip chip-small">TikTok</span></td>
+  <td class="variance-cell">8.9×</td>
+</tr>
+
+<tr>
+  <td class="title-cell"><a href="https://www.instagram.com/p/DYXYHDMAcZb/" target="_blank" rel="noopener" title="One DM is worth more than ten followers, and probably closer to a hundred.
+
+A follower is ">One DM is worth more than ten followers, and probably closer to a hundred.
 
 A follower is </a></td>
   <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640084101365566741" target="_blank" rel="noopener">126</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DYXYHDMAcZb/" target="_blank" rel="noopener">136</a></td>
+  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7640084101365566741" target="_blank" rel="noopener">141</a></td>
+  <td class="num"><a href="https://www.instagram.com/p/DYXYHDMAcZb/" target="_blank" rel="noopener">146</a></td>
   <td class="num"><a href="https://www.facebook.com/reel/1505804151191703/" target="_blank" rel="noopener">18</a></td>
   <td><span class="chip chip-small">Instagram</span></td>
-  <td class="variance-cell">7.6×</td>
-</tr>
-
-<tr>
-  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7625459767766568193" target="_blank" rel="noopener">Facebook isn't dead. You're just not using it right.
-
-If you run a local business like a s</a></td>
-  <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7625459767766568193" target="_blank" rel="noopener">171</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DWxczv7AdSO/" target="_blank" rel="noopener">144</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/1011632074520192/" target="_blank" rel="noopener">23</a></td>
-  <td><span class="chip chip-small">TikTok</span></td>
-  <td class="variance-cell">7.4×</td>
-</tr>
-
-<tr>
-  <td class="title-cell"><a href="https://www.instagram.com/p/DYJIkWBjLjc/" target="_blank" rel="noopener">There's a reason small businesses keep getting told they need a "better website" even afte</a></td>
-  <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7638096678041570578" target="_blank" rel="noopener">118</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DYJIkWBjLjc/" target="_blank" rel="noopener">179</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/898453353216233/" target="_blank" rel="noopener">25</a></td>
-  <td><span class="chip chip-small">Instagram</span></td>
-  <td class="variance-cell">7.2×</td>
-</tr>
-
-<tr>
-  <td class="title-cell"><a href="https://www.tiktok.com/@smash.balloon/video/7636275712189615377" target="_blank" rel="noopener">Three things separate 30 reviews from 300 ↓
-
-→ You're asking too late
-→ Your ask is too ge</a></td>
-  <td class="num muted">—</td>
-  <td class="num"><a href="https://www.tiktok.com/@smash.balloon/video/7636275712189615377" target="_blank" rel="noopener">209</a></td>
-  <td class="num"><a href="https://www.instagram.com/p/DX8gCFaCuf6/" target="_blank" rel="noopener">114</a></td>
-  <td class="num"><a href="https://www.facebook.com/reel/1148699417390828/" target="_blank" rel="noopener">30</a></td>
-  <td><span class="chip chip-small">TikTok</span></td>
-  <td class="variance-cell">7.0×</td>
+  <td class="variance-cell">8.1×</td>
 </tr>
     </tbody>
   </table>
@@ -1874,42 +2481,42 @@ If you run a local business like a s</a></td>
     
 <div class="topic-row">
   <div class="topic-head">
-    <span class="topic-name">Facebook strategy</span>
-    <span class="topic-stats">655 avg · 4 posts · 2,623 total</span>
+    <span class="topic-name">Other</span>
+    <span class="topic-stats">461 avg · 54 posts · 24,933 total</span>
   </div>
   <div class="topic-bar"><div class="topic-bar-fill" style="width:100.0%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
-    <span class="topic-name">Local business</span>
-    <span class="topic-stats">532 avg · 2 posts · 1,065 total</span>
+    <span class="topic-name">Messaging/WhatsApp</span>
+    <span class="topic-stats">438 avg · 2 posts · 876 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:81.2%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:94.9%"></div></div>
+</div>
+
+<div class="topic-row">
+  <div class="topic-head">
+    <span class="topic-name">Local business</span>
+    <span class="topic-stats">426 avg · 1 posts · 426 total</span>
+  </div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:92.3%"></div></div>
+</div>
+
+<div class="topic-row">
+  <div class="topic-head">
+    <span class="topic-name">Growth/Followers</span>
+    <span class="topic-stats">381 avg · 2 posts · 763 total</span>
+  </div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:82.6%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
     <span class="topic-name">Instagram strategy</span>
-    <span class="topic-stats">495 avg · 11 posts · 5,446 total</span>
+    <span class="topic-stats">373 avg · 13 posts · 4,853 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:75.5%"></div></div>
-</div>
-
-<div class="topic-row">
-  <div class="topic-head">
-    <span class="topic-name">Other</span>
-    <span class="topic-stats">460 avg · 10 posts · 4,604 total</span>
-  </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:70.2%"></div></div>
-</div>
-
-<div class="topic-row">
-  <div class="topic-head">
-    <span class="topic-name">Messaging/WhatsApp</span>
-    <span class="topic-stats">394 avg · 2 posts · 789 total</span>
-  </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:60.2%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:80.9%"></div></div>
 </div>
 
 <div class="topic-row">
@@ -1917,55 +2524,55 @@ If you run a local business like a s</a></td>
     <span class="topic-name">SEO/Search</span>
     <span class="topic-stats">365 avg · 1 posts · 365 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:55.7%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:79.1%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
     <span class="topic-name">Reviews</span>
-    <span class="topic-stats">356 avg · 8 posts · 2,855 total</span>
+    <span class="topic-stats">355 avg · 10 posts · 3,553 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:54.4%"></div></div>
-</div>
-
-<div class="topic-row">
-  <div class="topic-head">
-    <span class="topic-name">Email</span>
-    <span class="topic-stats">311 avg · 1 posts · 311 total</span>
-  </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:47.4%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:77.0%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
     <span class="topic-name">Content strategy</span>
-    <span class="topic-stats">302 avg · 5 posts · 1,511 total</span>
+    <span class="topic-stats">343 avg · 5 posts · 1,719 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:46.1%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:74.5%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
-    <span class="topic-name">Growth/Followers</span>
-    <span class="topic-stats">280 avg · 1 posts · 280 total</span>
+    <span class="topic-name">Email</span>
+    <span class="topic-stats">319 avg · 1 posts · 319 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:42.7%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:69.1%"></div></div>
+</div>
+
+<div class="topic-row">
+  <div class="topic-head">
+    <span class="topic-name">Facebook strategy</span>
+    <span class="topic-stats">287 avg · 4 posts · 1,151 total</span>
+  </div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:62.3%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
     <span class="topic-name">AI</span>
-    <span class="topic-stats">268 avg · 1 posts · 268 total</span>
+    <span class="topic-stats">269 avg · 1 posts · 269 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:40.9%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:58.3%"></div></div>
 </div>
 
 <div class="topic-row">
   <div class="topic-head">
     <span class="topic-name">TikTok strategy</span>
-    <span class="topic-stats">243 avg · 2 posts · 486 total</span>
+    <span class="topic-stats">249 avg · 2 posts · 499 total</span>
   </div>
-  <div class="topic-bar"><div class="topic-bar-fill" style="width:37.1%"></div></div>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:54.0%"></div></div>
 </div>
   </div>
 </section>
