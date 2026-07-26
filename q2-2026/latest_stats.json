@@ -1,0 +1,368 @@
+{
+  "window": {
+    "q2": "2026-04-01..2026-06-30",
+    "q1_comparable": "2026-01-01..2026-03-31"
+  },
+  "per_platform_q2": {
+    "youtube_shorts": {
+      "posts": 90,
+      "total_views": 40939,
+      "avg_views": 454.9,
+      "likes": 225,
+      "comments": 3,
+      "shares": 0,
+      "engagement": 228,
+      "engagement_rate_pct": 0.56
+    },
+    "tiktok": {
+      "posts": 92,
+      "total_views": 24469,
+      "avg_views": 266.0,
+      "likes": 515,
+      "comments": 4,
+      "shares": 5,
+      "engagement": 524,
+      "engagement_rate_pct": 2.14
+    },
+    "instagram": {
+      "posts": 95,
+      "total_views": 9143,
+      "avg_views": 96.2,
+      "likes": 411,
+      "comments": 4,
+      "shares": 0,
+      "engagement": 415,
+      "engagement_rate_pct": 4.54
+    },
+    "facebook": {
+      "posts": 94,
+      "total_views": 14261,
+      "avg_views": 151.7,
+      "likes": 15,
+      "comments": 6,
+      "shares": 0,
+      "engagement": 21,
+      "engagement_rate_pct": 0.15
+    }
+  },
+  "per_platform_q1_same_window": {
+    "youtube_shorts": {
+      "posts": 38,
+      "total_views": 22912,
+      "avg_views": 602.9,
+      "likes": 187,
+      "comments": 14,
+      "shares": 0,
+      "engagement": 201,
+      "engagement_rate_pct": 0.88
+    },
+    "tiktok": {
+      "posts": 38,
+      "total_views": 7362,
+      "avg_views": 193.7,
+      "likes": 356,
+      "comments": 7,
+      "shares": 33,
+      "engagement": 396,
+      "engagement_rate_pct": 5.38
+    },
+    "instagram": {
+      "posts": 38,
+      "total_views": 6092,
+      "avg_views": 160.3,
+      "likes": 348,
+      "comments": 10,
+      "shares": 0,
+      "engagement": 358,
+      "engagement_rate_pct": 5.88
+    },
+    "facebook": {
+      "posts": 38,
+      "total_views": 2308,
+      "avg_views": 60.7,
+      "likes": 2,
+      "comments": 3,
+      "shares": 1,
+      "engagement": 6,
+      "engagement_rate_pct": 0.26
+    }
+  },
+  "top_posts_q2": [
+    {
+      "title": "How to Actually Get More Google Reviews",
+      "platform": "youtube_shorts",
+      "views": 1816
+    },
+    {
+      "title": "Why Facebook is the Best Platform for Local Businesses",
+      "platform": "youtube_shorts",
+      "views": 1679
+    },
+    {
+      "title": "A Stranger Has No Reason to Believe Your Website",
+      "platform": "youtube_shorts",
+      "views": 1664
+    },
+    {
+      "title": "You Have 60 Seconds Before They Buy From Your Competitor",
+      "platform": "youtube_shorts",
+      "views": 1491
+    },
+    {
+      "title": "Why Your Local Business Loses Sales After 8pm",
+      "platform": "youtube_shorts",
+      "views": 1454
+    },
+    {
+      "title": "The Type of Content Instagram Is Pushing Right Now (It's Not What You Think)",
+      "platform": "youtube_shorts",
+      "views": 1385
+    },
+    {
+      "title": "Your Portfolio Is Three Years Behind Your Instagram",
+      "platform": "youtube_shorts",
+      "views": 1321
+    },
+    {
+      "title": "Your Video Isn't Flopping Because of When You Posted",
+      "platform": "youtube_shorts",
+      "views": 1316
+    },
+    {
+      "title": "Your Google Revies Are Trapped (FIX THIS)",
+      "platform": "youtube_shorts",
+      "views": 1291
+    },
+    {
+      "title": "Two weeks ago this quietly went global and barely anyone noticed: Meta's AI agent now lives inside W",
+      "platform": "tiktok",
+      "views": 1272
+    }
+  ],
+  "topic_performance_q2": [
+    {
+      "topic": "Local business",
+      "posts": 6,
+      "total_views": 3285,
+      "avg_views": 547.5
+    },
+    {
+      "topic": "Facebook strategy",
+      "posts": 10,
+      "total_views": 3466,
+      "avg_views": 346.6
+    },
+    {
+      "topic": "AI",
+      "posts": 8,
+      "total_views": 2592,
+      "avg_views": 324.0
+    },
+    {
+      "topic": "Other",
+      "posts": 81,
+      "total_views": 23443,
+      "avg_views": 289.4
+    },
+    {
+      "topic": "SEO/Search",
+      "posts": 7,
+      "total_views": 2020,
+      "avg_views": 288.6
+    },
+    {
+      "topic": "Instagram strategy",
+      "posts": 51,
+      "total_views": 14638,
+      "avg_views": 287.0
+    },
+    {
+      "topic": "Website/WordPress",
+      "posts": 14,
+      "total_views": 3647,
+      "avg_views": 260.5
+    },
+    {
+      "topic": "Reviews",
+      "posts": 48,
+      "total_views": 10982,
+      "avg_views": 228.8
+    },
+    {
+      "topic": "Messaging/WhatsApp",
+      "posts": 19,
+      "total_views": 4269,
+      "avg_views": 224.7
+    },
+    {
+      "topic": "Email",
+      "posts": 4,
+      "total_views": 885,
+      "avg_views": 221.2
+    }
+  ],
+  "cross_platform_variance": [
+    {
+      "title": "Call us sounds helpful until you realize it is a trap\n\nThey call while you are busy, nobody leaves a",
+      "views_by_platform": {
+        "tiktok": 680,
+        "instagram": 17,
+        "facebook": 152
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7656761454149831937",
+        "instagram": "https://www.instagram.com/p/DaK0V4tkxfW/",
+        "facebook": "https://www.facebook.com/reel/3161462147378277/"
+      },
+      "variance_ratio": 40.0,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7656761454149831937"
+    },
+    {
+      "title": "The right review on the right page closes the sale. \n\nA cupcake review next to your cupcakes does th",
+      "views_by_platform": {
+        "youtube_shorts": 23,
+        "tiktok": 666,
+        "instagram": 70,
+        "facebook": 18
+      },
+      "urls_by_platform": {
+        "youtube_shorts": "https://www.youtube.com/shorts/4klNuz_PjW0",
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7641937594028297492",
+        "instagram": "https://www.instagram.com/p/DYlpSp7E0b8/",
+        "facebook": "https://www.facebook.com/reel/878997805252137/"
+      },
+      "variance_ratio": 37.0,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7641937594028297492"
+    },
+    {
+      "title": "Two weeks ago this quietly went global and barely anyone noticed: Meta's AI agent now lives inside W",
+      "views_by_platform": {
+        "instagram": 40,
+        "tiktok": 1272,
+        "facebook": 186
+      },
+      "urls_by_platform": {
+        "instagram": "https://www.instagram.com/p/DZpLwGiFHn7/",
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7651582341952834837",
+        "facebook": "https://www.facebook.com/reel/991870930279832/"
+      },
+      "variance_ratio": 31.8,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7651582341952834837"
+    },
+    {
+      "title": "The most expensive thing in a small business isn't a bad review or a slow month.\n\nIt's the ready-to-",
+      "views_by_platform": {
+        "tiktok": 623,
+        "instagram": 23,
+        "facebook": 138
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7652217289273576725",
+        "instagram": "https://www.instagram.com/p/DZrfXlKDN0N/",
+        "facebook": "https://www.facebook.com/reel/1040818521769055/"
+      },
+      "variance_ratio": 27.1,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7652217289273576725"
+    },
+    {
+      "title": "A lot of your customers would genuinely rather lose the sale than call you.\n\nCalling means picking a",
+      "views_by_platform": {
+        "tiktok": 540,
+        "instagram": 23,
+        "facebook": 194
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7649332058170461460",
+        "instagram": "https://www.instagram.com/p/DZXF-obDss_/",
+        "facebook": "https://www.facebook.com/reel/1691254962208332/"
+      },
+      "variance_ratio": 23.5,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7649332058170461460"
+    },
+    {
+      "title": "Speed-to-reply quietly decides who wins the sale, and most websites are built to be slow on purpose.",
+      "views_by_platform": {
+        "tiktok": 327,
+        "instagram": 17,
+        "facebook": 159
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7653824360318323985",
+        "instagram": "https://www.instagram.com/p/DZ2imDUjuZU/",
+        "facebook": "https://www.facebook.com/reel/2934004383436643/"
+      },
+      "variance_ratio": 19.2,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7653824360318323985"
+    },
+    {
+      "title": "Most sites go dark the second a visitor actually has a question.\n\nSomeone shows up interested, they ",
+      "views_by_platform": {
+        "tiktok": 534,
+        "instagram": 30,
+        "facebook": 229
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7654153757697051921",
+        "instagram": "https://www.instagram.com/p/DZ4r-KJgbRF/",
+        "facebook": "https://www.facebook.com/reel/1402138561743909/"
+      },
+      "variance_ratio": 17.8,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7654153757697051921"
+    },
+    {
+      "title": "Most of us treat the caption as a label for the photo, but the photo already did its job the second ",
+      "views_by_platform": {
+        "tiktok": 358,
+        "instagram": 21,
+        "facebook": 247
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7653819587976252688",
+        "instagram": "https://www.instagram.com/p/DZ2PC93lFY2/",
+        "facebook": "https://www.facebook.com/reel/981929954731248/"
+      },
+      "variance_ratio": 17.0,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7653819587976252688"
+    },
+    {
+      "title": "The best time to post is a trap. The feed does not dump your video on a tiny window of people awake ",
+      "views_by_platform": {
+        "tiktok": 521,
+        "instagram": 32,
+        "facebook": 267
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7654522041634196752",
+        "instagram": "https://www.instagram.com/p/DZ7INdgFJm3/",
+        "facebook": "https://www.facebook.com/reel/1037677158599069/"
+      },
+      "variance_ratio": 16.3,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7654522041634196752"
+    },
+    {
+      "title": "Screenshots of your best reviews are better than nothing, but they have a quiet problem. \n\nThey're f",
+      "views_by_platform": {
+        "tiktok": 441,
+        "instagram": 33,
+        "facebook": 136
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7649336606507158804",
+        "instagram": "https://www.instagram.com/p/DZXiPWeAgig/",
+        "facebook": "https://www.facebook.com/reel/3114635635400200/"
+      },
+      "variance_ratio": 13.4,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7649336606507158804"
+    }
+  ]
+}
