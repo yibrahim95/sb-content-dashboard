@@ -1,0 +1,366 @@
+{
+  "window": {
+    "q2": "2026-07-01..2026-09-30",
+    "q1_comparable": "2026-04-01..2026-06-30"
+  },
+  "per_platform_q2": {
+    "youtube_shorts": {
+      "posts": 101,
+      "total_views": 23283,
+      "avg_views": 230.5,
+      "likes": 85,
+      "comments": 0,
+      "shares": 0,
+      "engagement": 85,
+      "engagement_rate_pct": 0.37
+    },
+    "tiktok": {
+      "posts": 104,
+      "total_views": 37517,
+      "avg_views": 360.7,
+      "likes": 844,
+      "comments": 7,
+      "shares": 27,
+      "engagement": 878,
+      "engagement_rate_pct": 2.34
+    },
+    "instagram": {
+      "posts": 105,
+      "total_views": 5522,
+      "avg_views": 52.6,
+      "likes": 298,
+      "comments": 2,
+      "shares": 0,
+      "engagement": 300,
+      "engagement_rate_pct": 5.43
+    },
+    "facebook": {
+      "posts": 99,
+      "total_views": 9233,
+      "avg_views": 93.3,
+      "likes": 18,
+      "comments": 4,
+      "shares": 1,
+      "engagement": 23,
+      "engagement_rate_pct": 0.25
+    }
+  },
+  "per_platform_q1_same_window": {
+    "youtube_shorts": {
+      "posts": 90,
+      "total_views": 41326,
+      "avg_views": 459.2,
+      "likes": 225,
+      "comments": 3,
+      "shares": 6,
+      "engagement": 234,
+      "engagement_rate_pct": 0.57
+    },
+    "tiktok": {
+      "posts": 93,
+      "total_views": 26185,
+      "avg_views": 281.6,
+      "likes": 544,
+      "comments": 4,
+      "shares": 13,
+      "engagement": 561,
+      "engagement_rate_pct": 2.14
+    },
+    "instagram": {
+      "posts": 95,
+      "total_views": 9385,
+      "avg_views": 98.8,
+      "likes": 416,
+      "comments": 4,
+      "shares": 0,
+      "engagement": 420,
+      "engagement_rate_pct": 4.48
+    },
+    "facebook": {
+      "posts": 94,
+      "total_views": 14303,
+      "avg_views": 152.2,
+      "likes": 15,
+      "comments": 6,
+      "shares": 0,
+      "engagement": 21,
+      "engagement_rate_pct": 0.15
+    }
+  },
+  "top_posts_q2": [
+    {
+      "title": "WhatsApp is about to start charging for messages that used to be free, but not the ones you think.\n\n",
+      "platform": "tiktok",
+      "views": 2891
+    },
+    {
+      "title": "Your Site Goes Silent the Second a Customer Has a Question",
+      "platform": "youtube_shorts",
+      "views": 1374
+    },
+    {
+      "title": "Why Your 5 Star Google Reviews Are Not Converting",
+      "platform": "youtube_shorts",
+      "views": 1224
+    },
+    {
+      "title": "You Don't Own Those Reviews",
+      "platform": "youtube_shorts",
+      "views": 1223
+    },
+    {
+      "title": "Show These Instagram Posts On Your Website Instead",
+      "platform": "youtube_shorts",
+      "views": 1198
+    },
+    {
+      "title": "A Live Chat WordPress Plugin Catches The Enquiries Your Pricing Page Can't",
+      "platform": "youtube_shorts",
+      "views": 1136
+    },
+    {
+      "title": "Why an Instagram feed on your website sells more tables than your menu",
+      "platform": "youtube_shorts",
+      "views": 1105
+    },
+    {
+      "title": "Why Your Google Reviews Aren't What They Seem",
+      "platform": "youtube_shorts",
+      "views": 1060
+    },
+    {
+      "title": "Your WordPress Instagram Feed Goes Blank And Nobody Tells You",
+      "platform": "youtube_shorts",
+      "views": 1037
+    },
+    {
+      "title": "How To Add An Instagram Feed To A WordPress Website Without The Grey Box",
+      "platform": "youtube_shorts",
+      "views": 989
+    }
+  ],
+  "topic_performance_q2": [
+    {
+      "topic": "Content strategy",
+      "posts": 2,
+      "total_views": 591,
+      "avg_views": 295.5
+    },
+    {
+      "topic": "Instagram strategy",
+      "posts": 60,
+      "total_views": 15210,
+      "avg_views": 253.5
+    },
+    {
+      "topic": "Reviews",
+      "posts": 44,
+      "total_views": 10634,
+      "avg_views": 241.7
+    },
+    {
+      "topic": "TikTok strategy",
+      "posts": 3,
+      "total_views": 723,
+      "avg_views": 241.0
+    },
+    {
+      "topic": "Messaging/WhatsApp",
+      "posts": 32,
+      "total_views": 7570,
+      "avg_views": 236.6
+    },
+    {
+      "topic": "YouTube strategy",
+      "posts": 6,
+      "total_views": 1335,
+      "avg_views": 222.5
+    },
+    {
+      "topic": "Other",
+      "posts": 81,
+      "total_views": 15892,
+      "avg_views": 196.2
+    },
+    {
+      "topic": "Website/WordPress",
+      "posts": 52,
+      "total_views": 10072,
+      "avg_views": 193.7
+    },
+    {
+      "topic": "SEO/Search",
+      "posts": 5,
+      "total_views": 934,
+      "avg_views": 186.8
+    },
+    {
+      "topic": "Email",
+      "posts": 2,
+      "total_views": 355,
+      "avg_views": 177.5
+    }
+  ],
+  "cross_platform_variance": [
+    {
+      "title": "WhatsApp is about to start charging for messages that used to be free, but not the ones you think.\n\n",
+      "views_by_platform": {
+        "tiktok": 2891,
+        "instagram": 39,
+        "facebook": 23
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7672709843857280263",
+        "instagram": "https://www.instagram.com/p/Db5T6MxDUQy/",
+        "facebook": "https://www.facebook.com/reel/1559607162212179/"
+      },
+      "variance_ratio": 125.7,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7672709843857280263"
+    },
+    {
+      "title": "Your best TikTok did 40k views. Great.\n\nThe customers actually deciding whether to buy from you, the",
+      "views_by_platform": {
+        "tiktok": 539,
+        "instagram": 33,
+        "facebook": 6
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7662710319294221585",
+        "instagram": "https://www.instagram.com/p/Daz7azvAelH/",
+        "facebook": "https://www.facebook.com/reel/1775713306766604/"
+      },
+      "variance_ratio": 89.8,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7662710319294221585"
+    },
+    {
+      "title": "Your phone number is costing you sales.\n\nThink about the last time you had to phone a business. You ",
+      "views_by_platform": {
+        "tiktok": 515,
+        "instagram": 101,
+        "facebook": 9
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7671194853014768914",
+        "instagram": "https://www.instagram.com/p/DbuzMSyipSD/",
+        "facebook": "https://www.facebook.com/reel/1090738889966672/"
+      },
+      "variance_ratio": 57.2,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7671194853014768914"
+    },
+    {
+      "title": "Somebody landed on your site at eleven last night with one question. They're not coming back.\n\nName,",
+      "views_by_platform": {
+        "tiktok": 407,
+        "instagram": 59,
+        "facebook": 9
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7678475383141846280",
+        "instagram": "https://www.instagram.com/p/DchUV1sE_mB/",
+        "facebook": "https://www.facebook.com/reel/3183184698521126/"
+      },
+      "variance_ratio": 45.2,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7678475383141846280"
+    },
+    {
+      "title": "Your website is great at proving your business exists, the hours, the prices, the facts, and terribl",
+      "views_by_platform": {
+        "tiktok": 533,
+        "instagram": 12,
+        "facebook": 192
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7658184644814277889",
+        "instagram": "https://www.instagram.com/p/DaUhhmiAcat/",
+        "facebook": "https://www.facebook.com/reel/4493101344308422/"
+      },
+      "variance_ratio": 44.4,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7658184644814277889"
+    },
+    {
+      "title": "Customers used to be able to ask you things directly on Google.\n\nNow the questions and answers secti",
+      "views_by_platform": {
+        "tiktok": 434,
+        "instagram": 48,
+        "facebook": 11
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7686466553352572167",
+        "instagram": "https://www.instagram.com/p/DdZIpmQgRcW/",
+        "facebook": "https://www.facebook.com/reel/974246485760981/"
+      },
+      "variance_ratio": 39.5,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7686466553352572167"
+    },
+    {
+      "title": "Your best Instagram post isn't your best Instagram post.\n\nThe Instagram feed on your website keeps i",
+      "views_by_platform": {
+        "tiktok": 584,
+        "instagram": 33,
+        "facebook": 15
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7676446969698454792",
+        "instagram": "https://www.instagram.com/p/DcTPkY-k1yk/",
+        "facebook": "https://www.facebook.com/reel/1100928949030784/"
+      },
+      "variance_ratio": 38.9,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7676446969698454792"
+    },
+    {
+      "title": "When Instagram goes down, a lot of small business websites go blank with it.\n\nA copy-pasted embed do",
+      "views_by_platform": {
+        "tiktok": 616,
+        "instagram": 73,
+        "facebook": 16
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7678318771156585736",
+        "instagram": "https://www.instagram.com/p/DcgPg1Akjlg/",
+        "facebook": "https://www.facebook.com/reel/1430429778944551/"
+      },
+      "variance_ratio": 38.5,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7678318771156585736"
+    },
+    {
+      "title": "The best thing on a restaurant's website is the part nobody had to write.\n\nBoda embed their Instagra",
+      "views_by_platform": {
+        "tiktok": 442,
+        "instagram": 70,
+        "facebook": 12
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7678660651631381778",
+        "instagram": "https://www.instagram.com/p/Dcimn1mkUk-/",
+        "facebook": "https://www.facebook.com/reel/813151415189181/"
+      },
+      "variance_ratio": 36.8,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7678660651631381778"
+    },
+    {
+      "title": "Same traffic. A form keeps 1 to 3 percent. A chat keeps 10 to 20.\n\nYou are not short on visitors, yo",
+      "views_by_platform": {
+        "tiktok": 491,
+        "instagram": 16,
+        "facebook": 268
+      },
+      "urls_by_platform": {
+        "tiktok": "https://www.tiktok.com/@smash.balloon/video/7659433907128945937",
+        "instagram": "https://www.instagram.com/p/DadMP1_AZfY/",
+        "facebook": "https://www.facebook.com/reel/2121102265113662/"
+      },
+      "variance_ratio": 30.7,
+      "best_platform": "tiktok",
+      "best_url": "https://www.tiktok.com/@smash.balloon/video/7659433907128945937"
+    }
+  ]
+}

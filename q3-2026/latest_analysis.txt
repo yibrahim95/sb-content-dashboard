@@ -1,0 +1,13 @@
+## Q3 2026 close · 30 Sep
+
+**WPChat hit its subscriber target.** 12 to 30 subscribers, up 150%, with the #social-shares push bringing in people from the WordPress space. WPChat views grew 43% on Q2 to 27,891 across platforms, and TikTok is its strongest surface at 2.6 times Q2. Long-form converts about 16 times better per view than Shorts (0.38 vs 0.02 subs per 100 views), so Q4 pairs Shorts for reach with long-form for subscribers.
+
+**Smash Balloon reach recovered.** A YouTube Shorts suppression in July was traced to specific videos and fixed. Ten SB Shorts passed 650 views in August and September, led by You Don't Own Those Reviews (1,222) and Why Your 5 Star Google Reviews Are Not Converting (1,214).
+
+**Output was steadier than Q2.** 104 YouTube videos across both brands, up from 95, cross-posted to TikTok, Instagram and Facebook, plus 23 AIOSEO shorts and 21 Marketable Moment videos. The weakest weeks were 5 videos during the suppression, against 2 to 4 in Q2, and output held at 7 to 10 a week from mid-August.
+
+**Rock 1 (SBR-288) is complete.** 16 fixes shipped against a target of 6, 14 with before/after pairs, 18 of 19 quality checks automated, and 27 live videos clean on the audit's defect classes.
+
+**Rock 3:** all 10 TikTok-native experiments run across six formats, 7 concluded with written findings, and 30 comments logged on other accounts.
+
+**Retention is the Q4 focus.** Average percentage viewed held at about 49% (SB 49.2%, WPChat 48.6%) against the 60% goal.
